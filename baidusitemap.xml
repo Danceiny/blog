@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>http://blog.cannot.cc/2016/03/08/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-0/</loc>
-    <lastmod>2017-05-07T10:06:55.381Z</lastmod>
+    <loc>http://blog.cannot.cc/2016/03/27/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-2/</loc>
+    <lastmod>2017-05-07T10:17:57.345Z</lastmod>
     <data>
         <display>
-        <title>C语言入门奇葩说-0</title>
-        <pubTime>2016-03-08T15:43:00.000Z</pubTime>
+        <title>C语言入门奇葩说-2</title>
+        <pubTime>2016-03-27T12:26:00.000Z</pubTime>
         
-        <tag>C语言, 入门</tag>
+        <tag>C语言</tag>
+         
+        <tag>入门</tag>
          
          
            
@@ -23,6 +25,50 @@
     </url>
 
     
+  <url>
+    <loc>http://blog.cannot.cc/2016/03/26/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-1/</loc>
+    <lastmod>2017-05-07T10:17:07.343Z</lastmod>
+    <data>
+        <display>
+        <title>C语言入门奇葩说-1</title>
+        <pubTime>2016-03-26T09:10:00.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>入门</tag>
+         
+         
+           
+             
+              <breadCrumb title="Language" url="http://blog.cannot.cc/categories/Language/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://blog.cannot.cc/2016/03/08/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-0/</loc>
+    <lastmod>2017-05-07T10:13:29.362Z</lastmod>
+    <data>
+        <display>
+        <title>C语言入门奇葩说-0</title>
+        <pubTime>2016-03-08T15:43:00.000Z</pubTime>
+        
+        <tag>C语言</tag>
+         
+        <tag>入门</tag>
+         
+         
+           
+             
+              <breadCrumb title="Language" url="http://blog.cannot.cc/categories/Language/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
     
   <url>
