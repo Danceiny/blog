@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>弹簧振子的博客</title>
+  <subtitle>Spring Oscillator</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.cannot.cc/"/>
+  <updated>2017-05-07T07:33:33.381Z</updated>
+  <id>http://blog.cannot.cc/</id>
+  
+  <author>
+    <name>Danceiny</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.cannot.cc/2017/05/07/hello-world/"/>
+    <id>http://blog.cannot.cc/2017/05/07/hello-world/</id>
+    <published>2017-05-07T07:33:33.380Z</published>
+    <updated>2017-05-07T07:33:33.381Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>C语言入门奇葩说-0</title>
+    <link href="http://blog.cannot.cc/2016/03/08/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-0/"/>
+    <id>http://blog.cannot.cc/2016/03/08/C语言入门奇葩说-0/</id>
+    <published>2016-03-08T15:43:00.000Z</published>
+    <updated>2017-05-07T10:06:55.381Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;About&quot;&gt;&lt;a href=&quot;#About&quot; class=&quot;headerlink&quot; title=&quot;About&quot;&gt;&lt;/a&gt;About&lt;/h1&gt;&lt;p&gt;！！！&lt;strong&gt;这个部分略过也没有大碍的。可以直接从关于读书开始看起。&lt;/strong&gt;！！！&lt;/p&gt;
+&lt;p&gt;
+    
+    </summary>
+    
+      <category term="Language" scheme="http://blog.cannot.cc/categories/Language/"/>
+    
+    
+      <category term="C语言, 入门" scheme="http://blog.cannot.cc/tags/C%E8%AF%AD%E8%A8%80-%E5%85%A5%E9%97%A8/"/>
+    
+  </entry>
+  
+</feed>
