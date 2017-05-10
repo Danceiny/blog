@@ -1,0 +1,438 @@
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Hexo version: \u001b[35m3.3.5\u001b[39m","time":"2017-05-07T07:36:45.483Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Working directory: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\\u001b[39m","time":"2017-05-07T07:36:45.488Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Config loaded: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\_config.yml\u001b[39m","time":"2017-05-07T07:36:45.689Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2017-05-07T07:36:45.720Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2017-05-07T07:36:45.727Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2017-05-07T07:36:45.734Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2017-05-07T07:36:45.738Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2017-05-07T07:36:45.750Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2017-05-07T07:36:45.756Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2017-05-07T07:36:45.770Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2017-05-07T07:36:45.907Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge-configs.js\u001b[39m","time":"2017-05-07T07:36:45.914Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\button.js\u001b[39m","time":"2017-05-07T07:36:45.917Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\center-quote.js\u001b[39m","time":"2017-05-07T07:36:45.919Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge.js\u001b[39m","time":"2017-05-07T07:36:45.928Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\full-image.js\u001b[39m","time":"2017-05-07T07:36:45.932Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\exturl.js\u001b[39m","time":"2017-05-07T07:36:45.936Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\group-pictures.js\u001b[39m","time":"2017-05-07T07:36:45.940Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\note.js\u001b[39m","time":"2017-05-07T07:36:45.943Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Loading database.","time":"2017-05-07T07:36:45.960Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":30,"msg":"Start processing","time":"2017-05-07T07:36:45.972Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Theme config loaded.","time":"2017-05-07T07:36:46.175Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35m_config.yml\u001b[39m","time":"2017-05-07T07:36:46.178Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/css/main.styl\u001b[39m","time":"2017-05-07T07:36:46.208Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/algolia_logo.svg\u001b[39m","time":"2017-05-07T07:36:46.211Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/avatar.gif\u001b[39m","time":"2017-05-07T07:36:46.213Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-nd.svg\u001b[39m","time":"2017-05-07T07:36:46.215Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-sa.svg\u001b[39m","time":"2017-05-07T07:36:46.217Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc.svg\u001b[39m","time":"2017-05-07T07:36:46.219Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nd.svg\u001b[39m","time":"2017-05-07T07:36:46.221Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-sa.svg\u001b[39m","time":"2017-05-07T07:36:46.223Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by.svg\u001b[39m","time":"2017-05-07T07:36:46.227Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/cc-zero.svg\u001b[39m","time":"2017-05-07T07:36:46.231Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/loading.gif\u001b[39m","time":"2017-05-07T07:36:46.235Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/placeholder.gif\u001b[39m","time":"2017-05-07T07:36:46.238Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/quote-l.svg\u001b[39m","time":"2017-05-07T07:36:46.240Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/quote-r.svg\u001b[39m","time":"2017-05-07T07:36:46.243Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/images/searchicon.png\u001b[39m","time":"2017-05-07T07:36:46.250Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_layout.swig\u001b[39m","time":"2017-05-07T07:36:46.486Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/archive.swig\u001b[39m","time":"2017-05-07T07:36:46.488Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/category.swig\u001b[39m","time":"2017-05-07T07:36:46.490Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/index.swig\u001b[39m","time":"2017-05-07T07:36:46.492Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/page.swig\u001b[39m","time":"2017-05-07T07:36:46.493Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/post.swig\u001b[39m","time":"2017-05-07T07:36:46.495Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/schedule.swig\u001b[39m","time":"2017-05-07T07:36:46.499Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/tag.swig\u001b[39m","time":"2017-05-07T07:36:46.501Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35m_posts/hello-world.md\u001b[39m","time":"2017-05-07T07:36:46.518Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/de.yml\u001b[39m","time":"2017-05-07T07:36:46.521Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/en.yml\u001b[39m","time":"2017-05-07T07:36:46.523Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/default.yml\u001b[39m","time":"2017-05-07T07:36:46.524Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/id.yml\u001b[39m","time":"2017-05-07T07:36:46.525Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/fr-FR.yml\u001b[39m","time":"2017-05-07T07:36:46.527Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/ja.yml\u001b[39m","time":"2017-05-07T07:36:46.532Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/ko.yml\u001b[39m","time":"2017-05-07T07:36:46.534Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/pt-BR.yml\u001b[39m","time":"2017-05-07T07:36:46.536Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/pt.yml\u001b[39m","time":"2017-05-07T07:36:46.538Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/ru.yml\u001b[39m","time":"2017-05-07T07:36:46.539Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-Hans.yml\u001b[39m","time":"2017-05-07T07:36:46.541Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-hk.yml\u001b[39m","time":"2017-05-07T07:36:46.542Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-tw.yml\u001b[39m","time":"2017-05-07T07:36:46.545Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/affix.js\u001b[39m","time":"2017-05-07T07:36:46.612Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/algolia-search.js\u001b[39m","time":"2017-05-07T07:36:46.614Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/bootstrap.js\u001b[39m","time":"2017-05-07T07:36:46.616Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/exturl.js\u001b[39m","time":"2017-05-07T07:36:46.620Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/hook-duoshuo.js\u001b[39m","time":"2017-05-07T07:36:46.624Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/js.cookie.js\u001b[39m","time":"2017-05-07T07:36:46.627Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/motion.js\u001b[39m","time":"2017-05-07T07:36:46.630Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/post-details.js\u001b[39m","time":"2017-05-07T07:36:46.633Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/scroll-cookie.js\u001b[39m","time":"2017-05-07T07:36:46.636Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/scrollspy.js\u001b[39m","time":"2017-05-07T07:36:46.638Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/utils.js\u001b[39m","time":"2017-05-07T07:36:46.641Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/algolia-instant-search/instantsearch.min.css\u001b[39m","time":"2017-05-07T07:36:46.644Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/canvas-nest/canvas-nest.min.js\u001b[39m","time":"2017-05-07T07:36:46.649Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/canvas-ribbon/canvas-ribbon.js\u001b[39m","time":"2017-05-07T07:36:46.651Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/LICENSE\u001b[39m","time":"2017-05-07T07:36:46.654Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/README.md\u001b[39m","time":"2017-05-07T07:36:46.658Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/bower.json\u001b[39m","time":"2017-05-07T07:36:46.660Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/HELP-US-OUT.txt\u001b[39m","time":"2017-05-07T07:36:46.662Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/bower.json\u001b[39m","time":"2017-05-07T07:36:46.668Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/CONTRIBUTING.md\u001b[39m","time":"2017-05-07T07:36:46.670Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/README.md\u001b[39m","time":"2017-05-07T07:36:46.672Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/bower.json\u001b[39m","time":"2017-05-07T07:36:46.677Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/jquery.lazyload.js\u001b[39m","time":"2017-05-07T07:36:46.683Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/jquery.scrollstop.js\u001b[39m","time":"2017-05-07T07:36:46.688Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/three/canvas_lines.min.js\u001b[39m","time":"2017-05-07T07:36:46.691Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/three/canvas_sphere.min.js\u001b[39m","time":"2017-05-07T07:36:46.694Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/three/three-waves.min.js\u001b[39m","time":"2017-05-07T07:36:46.700Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/bower.json\u001b[39m","time":"2017-05-07T07:36:46.702Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.min.js\u001b[39m","time":"2017-05-07T07:36:46.704Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.js\u001b[39m","time":"2017-05-07T07:36:46.706Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.min.js\u001b[39m","time":"2017-05-07T07:36:46.708Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/header.swig\u001b[39m","time":"2017-05-07T07:36:46.794Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/sidebar.swig\u001b[39m","time":"2017-05-07T07:36:46.799Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-collapse.swig\u001b[39m","time":"2017-05-07T07:36:46.800Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/reward.swig\u001b[39m","time":"2017-05-07T07:36:46.802Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-copyright.swig\u001b[39m","time":"2017-05-07T07:36:46.804Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post.swig\u001b[39m","time":"2017-05-07T07:36:46.805Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/sidebar.swig\u001b[39m","time":"2017-05-07T07:36:46.807Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/wechat-subscriber.swig\u001b[39m","time":"2017-05-07T07:36:46.808Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/comments.swig\u001b[39m","time":"2017-05-07T07:36:46.810Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/footer.swig\u001b[39m","time":"2017-05-07T07:36:46.812Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head.swig\u001b[39m","time":"2017-05-07T07:36:46.815Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/page-header.swig\u001b[39m","time":"2017-05-07T07:36:46.818Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header.swig\u001b[39m","time":"2017-05-07T07:36:46.819Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/pagination.swig\u001b[39m","time":"2017-05-07T07:36:46.821Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search.swig\u001b[39m","time":"2017-05-07T07:36:46.823Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/boostrap.swig\u001b[39m","time":"2017-05-07T07:36:46.824Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/commons.swig\u001b[39m","time":"2017-05-07T07:36:46.828Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/vendors.swig\u001b[39m","time":"2017-05-07T07:36:46.834Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/duoshuo-hot-articles.swig\u001b[39m","time":"2017-05-07T07:36:46.836Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/mathjax.swig\u001b[39m","time":"2017-05-07T07:36:46.837Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/exturl.swig\u001b[39m","time":"2017-05-07T07:36:46.839Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/schedule.swig\u001b[39m","time":"2017-05-07T07:36:46.842Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/scroll-cookie.swig\u001b[39m","time":"2017-05-07T07:36:46.843Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery/index.js\u001b[39m","time":"2017-05-07T07:36:46.848Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/mist.swig\u001b[39m","time":"2017-05-07T07:36:46.861Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/muse.swig\u001b[39m","time":"2017-05-07T07:36:46.865Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/js/src/schemes/pisces.js\u001b[39m","time":"2017-05-07T07:36:46.870Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.min.css\u001b[39m","time":"2017-05-07T07:36:46.873Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.min.js\u001b[39m","time":"2017-05-07T07:36:46.878Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/blank.gif\u001b[39m","time":"2017-05-07T07:36:46.883Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_loading.gif\u001b[39m","time":"2017-05-07T07:36:46.885Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_loading@2x.gif\u001b[39m","time":"2017-05-07T07:36:46.888Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_overlay.png\u001b[39m","time":"2017-05-07T07:36:46.892Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_sprite.png\u001b[39m","time":"2017-05-07T07:36:46.895Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_sprite@2x.png\u001b[39m","time":"2017-05-07T07:36:46.899Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.css\u001b[39m","time":"2017-05-07T07:36:46.902Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.js\u001b[39m","time":"2017-05-07T07:36:46.904Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.pack.js\u001b[39m","time":"2017-05-07T07:36:46.910Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/lib/fastclick.min.js\u001b[39m","time":"2017-05-07T07:36:46.916Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/lib/fastclick.js\u001b[39m","time":"2017-05-07T07:36:46.919Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.css\u001b[39m","time":"2017-05-07T07:36:46.921Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.css.map\u001b[39m","time":"2017-05-07T07:36:46.924Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.min.css\u001b[39m","time":"2017-05-07T07:36:46.929Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/ua-parser-js/dist/ua-parser.min.js\u001b[39m","time":"2017-05-07T07:36:46.934Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/ua-parser-js/dist/ua-parser.pack.js\u001b[39m","time":"2017-05-07T07:36:46.937Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/custom-head.swig\u001b[39m","time":"2017-05-07T07:36:46.975Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/external-fonts.swig\u001b[39m","time":"2017-05-07T07:36:46.977Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/localsearch.swig\u001b[39m","time":"2017-05-07T07:36:46.978Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/tinysou.swig\u001b[39m","time":"2017-05-07T07:36:46.981Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/swiftype.swig\u001b[39m","time":"2017-05-07T07:36:46.982Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/add-this.swig\u001b[39m","time":"2017-05-07T07:36:46.984Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/baidushare.swig\u001b[39m","time":"2017-05-07T07:36:46.986Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/duoshuo_share.swig\u001b[39m","time":"2017-05-07T07:36:46.987Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/jiathis.swig\u001b[39m","time":"2017-05-07T07:36:46.989Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/pages/post-details.swig\u001b[39m","time":"2017-05-07T07:36:46.990Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/pisces.swig\u001b[39m","time":"2017-05-07T07:36:46.992Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/application-insights.swig\u001b[39m","time":"2017-05-07T07:36:46.994Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/baidu-analytics.swig\u001b[39m","time":"2017-05-07T07:36:46.996Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/busuanzi-counter.swig\u001b[39m","time":"2017-05-07T07:36:46.998Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/cnzz-analytics.swig\u001b[39m","time":"2017-05-07T07:36:47.000Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/facebook-sdk.swig\u001b[39m","time":"2017-05-07T07:36:47.003Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/google-analytics.swig\u001b[39m","time":"2017-05-07T07:36:47.005Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/index.swig\u001b[39m","time":"2017-05-07T07:36:47.006Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/lean-analytics.swig\u001b[39m","time":"2017-05-07T07:36:47.008Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-analytics.swig\u001b[39m","time":"2017-05-07T07:36:47.009Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-mta.swig\u001b[39m","time":"2017-05-07T07:36:47.014Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/vkontakte-api.swig\u001b[39m","time":"2017-05-07T07:36:47.015Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/changyan.swig\u001b[39m","time":"2017-05-07T07:36:47.018Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/disqus.swig\u001b[39m","time":"2017-05-07T07:36:47.019Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/gentie.swig\u001b[39m","time":"2017-05-07T07:36:47.021Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/duoshuo.swig\u001b[39m","time":"2017-05-07T07:36:47.022Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/hypercomments.swig\u001b[39m","time":"2017-05-07T07:36:47.024Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/index.swig\u001b[39m","time":"2017-05-07T07:36:47.026Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/livere.swig\u001b[39m","time":"2017-05-07T07:36:47.028Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/youyan.swig\u001b[39m","time":"2017-05-07T07:36:47.032Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/index.swig\u001b[39m","time":"2017-05-07T07:36:47.034Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/localsearch.swig\u001b[39m","time":"2017-05-07T07:36:47.037Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/tinysou.swig\u001b[39m","time":"2017-05-07T07:36:47.039Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/seo/baidu-push.swig\u001b[39m","time":"2017-05-07T07:36:47.041Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.css\u001b[39m","time":"2017-05-07T07:36:47.048Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.js\u001b[39m","time":"2017-05-07T07:36:47.051Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.woff\u001b[39m","time":"2017-05-07T07:36:47.054Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.woff2\u001b[39m","time":"2017-05-07T07:36:47.059Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.js\u001b[39m","time":"2017-05-07T07:36:47.060Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han.otf\u001b[39m","time":"2017-05-07T07:36:47.080Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han-space.otf\u001b[39m","time":"2017-05-07T07:36:47.083Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han-space.woff\u001b[39m","time":"2017-05-07T07:36:47.087Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han.woff\u001b[39m","time":"2017-05-07T07:36:47.090Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/fancybox_buttons.png\u001b[39m","time":"2017-05-07T07:36:47.092Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-buttons.css\u001b[39m","time":"2017-05-07T07:36:47.094Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-buttons.js\u001b[39m","time":"2017-05-07T07:36:47.098Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-media.js\u001b[39m","time":"2017-05-07T07:36:47.101Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-thumbs.css\u001b[39m","time":"2017-05-07T07:36:47.103Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-thumbs.js\u001b[39m","time":"2017-05-07T07:36:47.106Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/FontAwesome.otf\u001b[39m","time":"2017-05-07T07:36:47.109Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.eot\u001b[39m","time":"2017-05-07T07:36:47.111Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.ttf\u001b[39m","time":"2017-05-07T07:36:47.116Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/dom.swig\u001b[39m","time":"2017-05-07T07:36:47.121Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/assets.swig\u001b[39m","time":"2017-05-07T07:36:47.123Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/algolia-instant-search/instantsearch.min.js\u001b[39m","time":"2017-05-07T07:36:47.127Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/three/three.min.js\u001b[39m","time":"2017-05-07T07:36:47.133Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.svg\u001b[39m","time":"2017-05-07T07:36:47.136Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2017-05-07T07:36:47.695Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2017-05-07T07:36:47.699Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2017-05-07T07:36:47.702Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2017-05-07T07:36:47.706Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2017-05-07T07:36:47.710Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2017-05-07T07:36:47.714Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2017-05-07T07:36:47.718Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":30,"msg":"Hexo is running at \u001b[4mhttp://localhost:4000/\u001b[24m. Press Ctrl+C to stop.","time":"2017-05-07T07:36:47.734Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Database saved","time":"2017-05-07T07:36:47.770Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":30,"msg":"Have a nice day","time":"2017-05-07T07:37:54.549Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":16008,"level":20,"msg":"Database saved","time":"2017-05-07T07:37:54.608Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Hexo version: \u001b[35m3.3.5\u001b[39m","time":"2017-05-07T07:48:59.488Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Working directory: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\\u001b[39m","time":"2017-05-07T07:48:59.494Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Config loaded: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\_config.yml\u001b[39m","time":"2017-05-07T07:48:59.728Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2017-05-07T07:48:59.758Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2017-05-07T07:48:59.766Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2017-05-07T07:48:59.773Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2017-05-07T07:48:59.779Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2017-05-07T07:48:59.792Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2017-05-07T07:48:59.814Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2017-05-07T07:48:59.819Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2017-05-07T07:48:59.961Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge-configs.js\u001b[39m","time":"2017-05-07T07:48:59.971Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge.js\u001b[39m","time":"2017-05-07T07:48:59.978Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\button.js\u001b[39m","time":"2017-05-07T07:48:59.982Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\center-quote.js\u001b[39m","time":"2017-05-07T07:48:59.986Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\full-image.js\u001b[39m","time":"2017-05-07T07:48:59.988Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\exturl.js\u001b[39m","time":"2017-05-07T07:48:59.991Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\note.js\u001b[39m","time":"2017-05-07T07:48:59.994Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\group-pictures.js\u001b[39m","time":"2017-05-07T07:49:00.000Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":60,"msg":"Port 4000 has been used. Try other port instead.","time":"2017-05-07T07:49:00.020Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":60,"err":{"message":"listen EADDRINUSE 0.0.0.0:4000","name":"Error","stack":"Error: listen EADDRINUSE 0.0.0.0:4000\n    at Object.exports._errnoException (util.js:1022:11)\n    at exports._exceptionWithHostPort (util.js:1045:20)\n    at Server._listen2 (net.js:1259:14)\n    at listen (net.js:1295:10)\n    at net.js:1405:9\n    at _combinedTickCallback (internal/process/next_tick.js:77:11)\n    at process._tickCallback (internal/process/next_tick.js:98:9)","code":"EADDRINUSE"},"msg":"Something's wrong. Maybe you can find the solution here: \u001b[4mhttp://hexo.io/docs/troubleshooting.html\u001b[24m","time":"2017-05-07T07:49:00.023Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":3628,"level":20,"msg":"Database saved","time":"2017-05-07T07:49:00.039Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Hexo version: \u001b[35m3.3.5\u001b[39m","time":"2017-05-07T07:49:11.234Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Working directory: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\\u001b[39m","time":"2017-05-07T07:49:11.239Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Config loaded: \u001b[35mC:\\Developer\\workspaces\\GitHub\\Hexo\\_config.yml\u001b[39m","time":"2017-05-07T07:49:11.470Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-archive\u001b[39m","time":"2017-05-07T07:49:11.499Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-category\u001b[39m","time":"2017-05-07T07:49:11.506Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-index\u001b[39m","time":"2017-05-07T07:49:11.512Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-generator-tag\u001b[39m","time":"2017-05-07T07:49:11.519Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-ejs\u001b[39m","time":"2017-05-07T07:49:11.527Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-stylus\u001b[39m","time":"2017-05-07T07:49:11.535Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-renderer-marked\u001b[39m","time":"2017-05-07T07:49:11.551Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Plugin loaded: \u001b[35mhexo-server\u001b[39m","time":"2017-05-07T07:49:11.687Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge-configs.js\u001b[39m","time":"2017-05-07T07:49:11.695Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\merge.js\u001b[39m","time":"2017-05-07T07:49:11.702Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\button.js\u001b[39m","time":"2017-05-07T07:49:11.706Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\center-quote.js\u001b[39m","time":"2017-05-07T07:49:11.710Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\exturl.js\u001b[39m","time":"2017-05-07T07:49:11.714Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\group-pictures.js\u001b[39m","time":"2017-05-07T07:49:11.721Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\full-image.js\u001b[39m","time":"2017-05-07T07:49:11.724Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Script loaded: \u001b[35mthemes\\next\\scripts\\tags\\note.js\u001b[39m","time":"2017-05-07T07:49:11.728Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Loading database.","time":"2017-05-07T07:49:11.750Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":30,"msg":"Start processing","time":"2017-05-07T07:49:11.766Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Theme config loaded.","time":"2017-05-07T07:49:11.966Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35m_config.yml\u001b[39m","time":"2017-05-07T07:49:11.969Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/css/main.styl\u001b[39m","time":"2017-05-07T07:49:11.984Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/algolia_logo.svg\u001b[39m","time":"2017-05-07T07:49:11.990Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/avatar.gif\u001b[39m","time":"2017-05-07T07:49:11.993Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-nd.svg\u001b[39m","time":"2017-05-07T07:49:12.000Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc-sa.svg\u001b[39m","time":"2017-05-07T07:49:12.004Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nc.svg\u001b[39m","time":"2017-05-07T07:49:12.007Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-nd.svg\u001b[39m","time":"2017-05-07T07:49:12.009Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by-sa.svg\u001b[39m","time":"2017-05-07T07:49:12.017Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-by.svg\u001b[39m","time":"2017-05-07T07:49:12.023Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/cc-zero.svg\u001b[39m","time":"2017-05-07T07:49:12.030Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/loading.gif\u001b[39m","time":"2017-05-07T07:49:12.035Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/placeholder.gif\u001b[39m","time":"2017-05-07T07:49:12.041Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/quote-l.svg\u001b[39m","time":"2017-05-07T07:49:12.047Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/quote-r.svg\u001b[39m","time":"2017-05-07T07:49:12.055Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/images/searchicon.png\u001b[39m","time":"2017-05-07T07:49:12.061Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35m_posts/hello-world.md\u001b[39m","time":"2017-05-07T07:49:12.111Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mabout/index.md\u001b[39m","time":"2017-05-07T07:49:12.114Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_layout.swig\u001b[39m","time":"2017-05-07T07:49:12.362Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/archive.swig\u001b[39m","time":"2017-05-07T07:49:12.365Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/category.swig\u001b[39m","time":"2017-05-07T07:49:12.368Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/index.swig\u001b[39m","time":"2017-05-07T07:49:12.370Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/page.swig\u001b[39m","time":"2017-05-07T07:49:12.372Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/post.swig\u001b[39m","time":"2017-05-07T07:49:12.375Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/schedule.swig\u001b[39m","time":"2017-05-07T07:49:12.377Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/tag.swig\u001b[39m","time":"2017-05-07T07:49:12.382Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mcategories/index.md\u001b[39m","time":"2017-05-07T07:49:12.392Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/de.yml\u001b[39m","time":"2017-05-07T07:49:12.395Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/default.yml\u001b[39m","time":"2017-05-07T07:49:12.399Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/en.yml\u001b[39m","time":"2017-05-07T07:49:12.403Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/fr-FR.yml\u001b[39m","time":"2017-05-07T07:49:12.406Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/id.yml\u001b[39m","time":"2017-05-07T07:49:12.409Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/ja.yml\u001b[39m","time":"2017-05-07T07:49:12.417Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/ko.yml\u001b[39m","time":"2017-05-07T07:49:12.420Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/pt-BR.yml\u001b[39m","time":"2017-05-07T07:49:12.424Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/ru.yml\u001b[39m","time":"2017-05-07T07:49:12.428Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-Hans.yml\u001b[39m","time":"2017-05-07T07:49:12.431Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/pt.yml\u001b[39m","time":"2017-05-07T07:49:12.435Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-hk.yml\u001b[39m","time":"2017-05-07T07:49:12.438Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlanguages/zh-tw.yml\u001b[39m","time":"2017-05-07T07:49:12.441Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mtags/index.md\u001b[39m","time":"2017-05-07T07:49:12.446Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/affix.js\u001b[39m","time":"2017-05-07T07:49:12.473Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/algolia-search.js\u001b[39m","time":"2017-05-07T07:49:12.480Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/bootstrap.js\u001b[39m","time":"2017-05-07T07:49:12.489Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/exturl.js\u001b[39m","time":"2017-05-07T07:49:12.492Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/hook-duoshuo.js\u001b[39m","time":"2017-05-07T07:49:12.495Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/js.cookie.js\u001b[39m","time":"2017-05-07T07:49:12.500Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/motion.js\u001b[39m","time":"2017-05-07T07:49:12.503Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/post-details.js\u001b[39m","time":"2017-05-07T07:49:12.508Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/scroll-cookie.js\u001b[39m","time":"2017-05-07T07:49:12.511Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/scrollspy.js\u001b[39m","time":"2017-05-07T07:49:12.518Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/utils.js\u001b[39m","time":"2017-05-07T07:49:12.521Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/algolia-instant-search/instantsearch.min.css\u001b[39m","time":"2017-05-07T07:49:12.525Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/canvas-nest/canvas-nest.min.js\u001b[39m","time":"2017-05-07T07:49:12.531Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/canvas-ribbon/canvas-ribbon.js\u001b[39m","time":"2017-05-07T07:49:12.535Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/LICENSE\u001b[39m","time":"2017-05-07T07:49:12.539Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/README.md\u001b[39m","time":"2017-05-07T07:49:12.543Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/bower.json\u001b[39m","time":"2017-05-07T07:49:12.550Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/HELP-US-OUT.txt\u001b[39m","time":"2017-05-07T07:49:12.557Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/bower.json\u001b[39m","time":"2017-05-07T07:49:12.560Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/CONTRIBUTING.md\u001b[39m","time":"2017-05-07T07:49:12.565Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/README.md\u001b[39m","time":"2017-05-07T07:49:12.569Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/bower.json\u001b[39m","time":"2017-05-07T07:49:12.573Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/jquery.lazyload.js\u001b[39m","time":"2017-05-07T07:49:12.576Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery_lazyload/jquery.scrollstop.js\u001b[39m","time":"2017-05-07T07:49:12.579Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/three/canvas_lines.min.js\u001b[39m","time":"2017-05-07T07:49:12.589Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/three/canvas_sphere.min.js\u001b[39m","time":"2017-05-07T07:49:12.592Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/three/three-waves.min.js\u001b[39m","time":"2017-05-07T07:49:12.597Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/bower.json\u001b[39m","time":"2017-05-07T07:49:12.604Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.min.js\u001b[39m","time":"2017-05-07T07:49:12.607Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.js\u001b[39m","time":"2017-05-07T07:49:12.611Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.ui.min.js\u001b[39m","time":"2017-05-07T07:49:12.619Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/jquery/index.js\u001b[39m","time":"2017-05-07T07:49:12.676Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-collapse.swig\u001b[39m","time":"2017-05-07T07:49:12.766Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/sidebar.swig\u001b[39m","time":"2017-05-07T07:49:12.768Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_custom/header.swig\u001b[39m","time":"2017-05-07T07:49:12.770Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post-copyright.swig\u001b[39m","time":"2017-05-07T07:49:12.773Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/post.swig\u001b[39m","time":"2017-05-07T07:49:12.775Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/reward.swig\u001b[39m","time":"2017-05-07T07:49:12.778Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/wechat-subscriber.swig\u001b[39m","time":"2017-05-07T07:49:12.782Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_macro/sidebar.swig\u001b[39m","time":"2017-05-07T07:49:12.784Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/comments.swig\u001b[39m","time":"2017-05-07T07:49:12.787Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/footer.swig\u001b[39m","time":"2017-05-07T07:49:12.790Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head.swig\u001b[39m","time":"2017-05-07T07:49:12.793Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/header.swig\u001b[39m","time":"2017-05-07T07:49:12.798Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/page-header.swig\u001b[39m","time":"2017-05-07T07:49:12.803Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/pagination.swig\u001b[39m","time":"2017-05-07T07:49:12.805Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search.swig\u001b[39m","time":"2017-05-07T07:49:12.807Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/boostrap.swig\u001b[39m","time":"2017-05-07T07:49:12.811Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/commons.swig\u001b[39m","time":"2017-05-07T07:49:12.817Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/vendors.swig\u001b[39m","time":"2017-05-07T07:49:12.821Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/duoshuo-hot-articles.swig\u001b[39m","time":"2017-05-07T07:49:12.825Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/exturl.swig\u001b[39m","time":"2017-05-07T07:49:12.828Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/mathjax.swig\u001b[39m","time":"2017-05-07T07:49:12.830Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/schedule.swig\u001b[39m","time":"2017-05-07T07:49:12.835Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/scroll-cookie.swig\u001b[39m","time":"2017-05-07T07:49:12.839Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/js/src/schemes/pisces.js\u001b[39m","time":"2017-05-07T07:49:12.849Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.min.css\u001b[39m","time":"2017-05-07T07:49:12.851Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.min.js\u001b[39m","time":"2017-05-07T07:49:12.855Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/blank.gif\u001b[39m","time":"2017-05-07T07:49:12.857Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_loading.gif\u001b[39m","time":"2017-05-07T07:49:12.861Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_loading@2x.gif\u001b[39m","time":"2017-05-07T07:49:12.867Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_overlay.png\u001b[39m","time":"2017-05-07T07:49:12.871Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_sprite.png\u001b[39m","time":"2017-05-07T07:49:12.877Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/fancybox_sprite@2x.png\u001b[39m","time":"2017-05-07T07:49:12.880Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.css\u001b[39m","time":"2017-05-07T07:49:12.884Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.js\u001b[39m","time":"2017-05-07T07:49:12.887Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/jquery.fancybox.pack.js\u001b[39m","time":"2017-05-07T07:49:12.892Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/lib/fastclick.min.js\u001b[39m","time":"2017-05-07T07:49:12.896Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fastclick/lib/fastclick.js\u001b[39m","time":"2017-05-07T07:49:12.903Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.css\u001b[39m","time":"2017-05-07T07:49:12.913Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.css.map\u001b[39m","time":"2017-05-07T07:49:12.921Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/css/font-awesome.min.css\u001b[39m","time":"2017-05-07T07:49:12.925Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/ua-parser-js/dist/ua-parser.min.js\u001b[39m","time":"2017-05-07T07:49:12.929Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/ua-parser-js/dist/ua-parser.pack.js\u001b[39m","time":"2017-05-07T07:49:12.938Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/muse.swig\u001b[39m","time":"2017-05-07T07:49:12.953Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/mist.swig\u001b[39m","time":"2017-05-07T07:49:12.961Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.css\u001b[39m","time":"2017-05-07T07:49:12.970Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/han.js\u001b[39m","time":"2017-05-07T07:49:12.972Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.woff\u001b[39m","time":"2017-05-07T07:49:12.974Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.woff2\u001b[39m","time":"2017-05-07T07:49:12.977Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/velocity/velocity.js\u001b[39m","time":"2017-05-07T07:49:12.987Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/custom-head.swig\u001b[39m","time":"2017-05-07T07:49:13.043Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/head/external-fonts.swig\u001b[39m","time":"2017-05-07T07:49:13.046Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/localsearch.swig\u001b[39m","time":"2017-05-07T07:49:13.050Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/swiftype.swig\u001b[39m","time":"2017-05-07T07:49:13.052Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/search/tinysou.swig\u001b[39m","time":"2017-05-07T07:49:13.054Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/add-this.swig\u001b[39m","time":"2017-05-07T07:49:13.056Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/baidushare.swig\u001b[39m","time":"2017-05-07T07:49:13.058Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/duoshuo_share.swig\u001b[39m","time":"2017-05-07T07:49:13.060Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_partials/share/jiathis.swig\u001b[39m","time":"2017-05-07T07:49:13.065Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/pages/post-details.swig\u001b[39m","time":"2017-05-07T07:49:13.068Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_scripts/schemes/pisces.swig\u001b[39m","time":"2017-05-07T07:49:13.071Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/application-insights.swig\u001b[39m","time":"2017-05-07T07:49:13.075Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/baidu-analytics.swig\u001b[39m","time":"2017-05-07T07:49:13.076Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/busuanzi-counter.swig\u001b[39m","time":"2017-05-07T07:49:13.079Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/cnzz-analytics.swig\u001b[39m","time":"2017-05-07T07:49:13.085Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/facebook-sdk.swig\u001b[39m","time":"2017-05-07T07:49:13.087Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/google-analytics.swig\u001b[39m","time":"2017-05-07T07:49:13.090Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/index.swig\u001b[39m","time":"2017-05-07T07:49:13.095Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/lean-analytics.swig\u001b[39m","time":"2017-05-07T07:49:13.098Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-analytics.swig\u001b[39m","time":"2017-05-07T07:49:13.102Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/vkontakte-api.swig\u001b[39m","time":"2017-05-07T07:49:13.106Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/changyan.swig\u001b[39m","time":"2017-05-07T07:49:13.109Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/disqus.swig\u001b[39m","time":"2017-05-07T07:49:13.112Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/duoshuo.swig\u001b[39m","time":"2017-05-07T07:49:13.116Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/analytics/tencent-mta.swig\u001b[39m","time":"2017-05-07T07:49:13.120Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/hypercomments.swig\u001b[39m","time":"2017-05-07T07:49:13.122Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/gentie.swig\u001b[39m","time":"2017-05-07T07:49:13.125Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/livere.swig\u001b[39m","time":"2017-05-07T07:49:13.129Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/index.swig\u001b[39m","time":"2017-05-07T07:49:13.132Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/comments/youyan.swig\u001b[39m","time":"2017-05-07T07:49:13.135Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/index.swig\u001b[39m","time":"2017-05-07T07:49:13.138Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/localsearch.swig\u001b[39m","time":"2017-05-07T07:49:13.140Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/tinysou.swig\u001b[39m","time":"2017-05-07T07:49:13.142Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/seo/baidu-push.swig\u001b[39m","time":"2017-05-07T07:49:13.147Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han-space.otf\u001b[39m","time":"2017-05-07T07:49:13.161Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han-space.woff\u001b[39m","time":"2017-05-07T07:49:13.168Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han.otf\u001b[39m","time":"2017-05-07T07:49:13.171Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/Han/dist/font/han.woff\u001b[39m","time":"2017-05-07T07:49:13.174Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/fancybox_buttons.png\u001b[39m","time":"2017-05-07T07:49:13.177Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-buttons.css\u001b[39m","time":"2017-05-07T07:49:13.182Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-buttons.js\u001b[39m","time":"2017-05-07T07:49:13.186Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-media.js\u001b[39m","time":"2017-05-07T07:49:13.191Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-thumbs.css\u001b[39m","time":"2017-05-07T07:49:13.194Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/fancybox/source/helpers/jquery.fancybox-thumbs.js\u001b[39m","time":"2017-05-07T07:49:13.198Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/FontAwesome.otf\u001b[39m","time":"2017-05-07T07:49:13.202Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.eot\u001b[39m","time":"2017-05-07T07:49:13.206Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.ttf\u001b[39m","time":"2017-05-07T07:49:13.210Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/assets.swig\u001b[39m","time":"2017-05-07T07:49:13.220Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/algolia-instant-search/instantsearch.min.js\u001b[39m","time":"2017-05-07T07:49:13.224Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35mlayout/_third-party/search/algolia-search/dom.swig\u001b[39m","time":"2017-05-07T07:49:13.229Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/three/three.min.js\u001b[39m","time":"2017-05-07T07:49:13.236Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Processed: \u001b[35msource/lib/font-awesome/fonts/fontawesome-webfont.svg\u001b[39m","time":"2017-05-07T07:49:13.242Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35mpage\u001b[39m","time":"2017-05-07T07:49:13.841Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35mpost\u001b[39m","time":"2017-05-07T07:49:13.844Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35marchive\u001b[39m","time":"2017-05-07T07:49:13.846Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35mcategory\u001b[39m","time":"2017-05-07T07:49:13.849Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35mindex\u001b[39m","time":"2017-05-07T07:49:13.854Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35mtag\u001b[39m","time":"2017-05-07T07:49:13.856Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Generator: \u001b[35masset\u001b[39m","time":"2017-05-07T07:49:13.860Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":30,"msg":"Hexo is running at \u001b[4mhttp://localhost:4000/\u001b[24m. Press Ctrl+C to stop.","time":"2017-05-07T07:49:13.876Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Database saved","time":"2017-05-07T07:49:13.918Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Rendering index: \u001b[35mindex.html\u001b[39m","time":"2017-05-07T07:49:17.908Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Rendering archive: \u001b[35marchives/index.html\u001b[39m","time":"2017-05-07T07:49:23.254Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Rendering page: \u001b[35mtags/index.html\u001b[39m","time":"2017-05-07T07:49:27.296Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Rendering archive: \u001b[35marchives/index.html\u001b[39m","time":"2017-05-07T07:49:39.166Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Rendering page: \u001b[35mtags/index.html\u001b[39m","time":"2017-05-07T07:49:44.387Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":30,"msg":"Good bye","time":"2017-05-07T07:50:46.030Z","v":0}
+{"name":"hexo","hostname":"Danceiny","pid":11296,"level":20,"msg":"Database saved","time":"2017-05-07T07:50:46.052Z","v":0}
