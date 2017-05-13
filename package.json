@@ -6,6 +6,7 @@
     "version": "3.3.5"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "hexo": "^3.2.0",
     "hexo-asset-image": "git+https://github.com/CodeFalling/hexo-asset-image.git",
     "hexo-autonofollow": "^1.0.1",
@@ -22,6 +23,7 @@
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "hexo-wordcount": "^2.0.1"
   }
 }
