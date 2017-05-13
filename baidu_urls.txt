@@ -1,3 +1,4 @@
+http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html
 http://blog.cannot.cc/hello-world.html
 http://blog.cannot.cc/C语言入门奇葩说-2.html
 http://blog.cannot.cc/C语言入门奇葩说-1.html

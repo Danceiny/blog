@@ -380,6 +380,224 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Danceiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="弹簧振子的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/利用Hexo搭建个人博客站点全纪录.html" itemprop="url">未命名</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T15:09:53+08:00">
+                2017-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/利用Hexo搭建个人博客站点全纪录.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/利用Hexo搭建个人博客站点全纪录.html" class="leancloud_visitors" data-flag-title="">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  765
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="需求澄清"><a href="#需求澄清" class="headerlink" title="需求澄清"></a>需求澄清</h1><ul>
+<li>个人博客。</li>
+<li>静态的即可。</li>
+<li>可由GitHub Pages或者Coding.net Pages服务托管。</li>
+<li>要有域名，好记。</li>
+<li>博客中有图片，需要稳定的存储。</li>
+<li>维护与操作系统平台无关（因为自己各种操作系统切换）。</li>
+</ul>
+<h1 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h1><p>Hexo + GitHub/Coding Pages双托管 + 腾讯云解析 + 七牛云图片存储</p>
+<h1 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h1><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>首先安装npm，使用npm安装hexo。</p>
+<ul>
+<li><a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></li>
+</ul>
+<h2 id="主题Next"><a href="#主题Next" class="headerlink" title="主题Next"></a>主题Next</h2><p>安装：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>仓库地址：<a href="https://github.com/Danceiny/blog" target="_blank" rel="external">https://github.com/Danceiny/blog</a><br>Pages地址：<a href="https://danceiny.github.io/blog" target="_blank" rel="external">https://danceiny.github.io/blog</a><br>添加CNAME文件，指向blog.cannot.cc，Pages地址重定向到该域名。</p>
+<h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2><p>同上。</p>
+<h2 id="腾讯云解析"><a href="#腾讯云解析" class="headerlink" title="腾讯云解析"></a>腾讯云解析</h2><p>已有域名（已备案）: <a href="http://cannot.cc" target="_blank" rel="external">cannot.cc</a></p>
+<p>添加二级域名: <a href="http://blog.cannot.cc">blog.cannot.cc</a></p>
+<p>添加CNAME类型的记录，记录值设置为danceiny.github.io.</p>
+<p>把www.blog.cannot.cc记录到pages.coding.me.</p>
+<p>顺便把cannot.cc解析到 <a href="http://danceiny.github.io" target="_blank" rel="external">http://danceiny.github.io</a> 了。（原来在Github上的个人主页）。有空再修改。</p>
+<p>注意：</p>
+<ol>
+<li>腾讯云解析的记录值是比较需要关注的。</li>
+<li>www是个神奇的东西，<a href="http://blog.cannot.cc">http://blog.cannot.cc</a> 和 <a href="http://www.blog.cannot.cc" target="_blank" rel="external">http://www.blog.cannot.cc</a> 是不一样的两个东西。</li>
+</ol>
+<h2 id="七牛图床"><a href="#七牛图床" class="headerlink" title="七牛图床"></a>七牛图床</h2><p><a href="https://portal.qiniu.com/bucket/" target="_blank" rel="external">https://portal.qiniu.com/bucket/</a><br>有很多官方工具可以使用，命令行，GUI，但是目前我感觉不太用户友好。访问秘钥就是两个：Access Key和Secret Key。Bucket像是GitHub里的仓库吧，我叫它<strong>对象存储仓库</strong>。</p>
+<h2 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h2><ol>
+<li>可在Next中配置，使用leancloud.cn <a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%8" target="_blank" rel="external">参见博客</a></li>
+</ol>
+<h2 id="社交分享"><a href="#社交分享" class="headerlink" title="社交分享"></a>社交分享</h2><p>直接在Next中开启jiathis即可。不支持https是个隐患。</p>
+<h2 id="站点搜索"><a href="#站点搜索" class="headerlink" title="站点搜索"></a>站点搜索</h2><p>可选的几个服务都是收费的，所以我选了本地的搜索。按照Next的教程配置即可。</p>
+<h2 id="百度联盟"><a href="#百度联盟" class="headerlink" title="百度联盟"></a>百度联盟</h2><p><a href="http://union.baidu.com" target="_blank" rel="external">http://union.baidu.com</a><br>申请，未通过，网站内容还是少了点。</p>
+<h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>站点访问统计。百度统计的账号和百度联盟账号可以不一样，不过还是统一账号比较好，方便管理。</p>
+<h2 id="谷歌分析"><a href="#谷歌分析" class="headerlink" title="谷歌分析"></a>谷歌分析</h2><h2 id="跟帖回复评论"><a href="#跟帖回复评论" class="headerlink" title="跟帖回复评论"></a>跟帖回复评论</h2><p>使用Facebook的评论系统。</p>
+<p>网易云跟帖未引入，不过看起来效果不错。</p>
+<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><ol>
+<li><p>Hexo优化之为外部链接添加nofollow  <a href="https://liuzhichao.com/2016/hexo-auto-nofollow.html" target="_blank" rel="external">https://liuzhichao.com/2016/hexo-auto-nofollow.html</a></p>
+</li>
+<li><p><a href="https://eason-yang.com/2016/08/03/tips-for-hexo-and-hexo-next/" target="_blank" rel="external">https://eason-yang.com/2016/08/03/tips-for-hexo-and-hexo-next/</a></p>
+</li>
+<li><p><a href="https://juejin.im/post/590b451a0ce46300588c43a0" target="_blank" rel="external">hexo高阶教程：教你怎么让你的hexo博客在搜索引擎中排第一</a></p>
+</li>
+</ol>
+<h2 id="站点地图"><a href="#站点地图" class="headerlink" title="站点地图"></a>站点地图</h2><p>通过npm下载插件。有专门针对百度的。可做SEO。</p>
+<p>sitemaps.xml</p>
+<h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2><p>通过npm下载插件。</p>
+<h2 id="Facebook-Audience广告投放"><a href="#Facebook-Audience广告投放" class="headerlink" title="Facebook Audience广告投放"></a>Facebook Audience广告投放</h2><p>未搞定。</p>
+<h2 id="Hexo部署"><a href="#Hexo部署" class="headerlink" title="Hexo部署"></a>Hexo部署</h2><p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></p>
+<p>可部署到百度，方便搜索引擎收录。</p>
+<h2 id="CNAME覆盖问题"><a href="#CNAME覆盖问题" class="headerlink" title="CNAME覆盖问题"></a>CNAME覆盖问题</h2><p><a href="https://www.stayhungry.me/2015/07/26/%E6%90%AD%E5%BB%BAHexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" target="_blank" rel="external">https://www.stayhungry.me/2015/07/26/%E6%90%AD%E5%BB%BAHexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</a></p>
+<h2 id="利用分支备份Hexo项目源代码"><a href="#利用分支备份Hexo项目源代码" class="headerlink" title="利用分支备份Hexo项目源代码"></a>利用分支备份Hexo项目源代码</h2><p>在博客对应的GitHub项目上创建Hexo分支。Pages服务用的是master分支。</p>
+<p>yaml重要配置文件不应该上传到公开项目。</p>
+<h2 id="去掉post的url中的日期"><a href="#去掉post的url中的日期" class="headerlink" title="去掉post的url中的日期"></a>去掉post的url中的日期</h2><p>permalink: :title.html</p>
+<h2 id="其他优秀的同类型博客"><a href="#其他优秀的同类型博客" class="headerlink" title="其他优秀的同类型博客"></a>其他优秀的同类型博客</h2><p><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/hello-world.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1229,7 +1447,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.cannot.cc/"/>
-  <updated>2017-05-07T07:33:33.381Z</updated>
+  <updated>2017-05-13T07:49:21.589Z</updated>
   <id>http://blog.cannot.cc/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.cannot.cc/%E5%88%A9%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%82%B9%E5%85%A8%E7%BA%AA%E5%BD%95.html"/>
+    <id>http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html</id>
+    <published>2017-05-13T07:09:53.415Z</published>
+    <updated>2017-05-13T07:49:21.589Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;需求澄清&quot;&gt;&lt;a href=&quot;#需求澄清&quot; class=&quot;headerlink&quot; title=&quot;需求澄清&quot;&gt;&lt;/a&gt;需求澄清&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;个人博客。&lt;/li&gt;
+&lt;li&gt;静态的即可。&lt;/li&gt;
+&lt;li&gt;可由GitHub Pages或者Coding.ne
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
