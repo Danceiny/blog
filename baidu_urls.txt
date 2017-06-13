@@ -1,3 +1,5 @@
+http://blog.cannot.cc/Ext2Fsd.html
+http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html
 http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html
 http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html
 http://blog.cannot.cc/hello-world.html

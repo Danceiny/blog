@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.cannot.cc/"/>
-  <updated>2017-06-06T15:15:21.502Z</updated>
+  <updated>2017-06-07T11:04:14.045Z</updated>
   <id>http://blog.cannot.cc/</id>
   
   <author>
@@ -16,11 +16,53 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://blog.cannot.cc/Ext2Fsd.html"/>
+    <id>http://blog.cannot.cc/Ext2Fsd.html</id>
+    <published>2017-06-07T11:04:14.045Z</published>
+    <updated>2017-06-07T11:04:14.045Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>WebQQ与聊天机器人的玩法</title>
+    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html"/>
+    <id>http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html</id>
+    <published>2017-06-06T15:06:19.000Z</published>
+    <updated>2017-06-08T09:31:34.190Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;登录模块&quot;&gt;&lt;a href=&quot;#登录模块&quot; class=&quot;headerlink&quot; title=&quot;登录模块&quot;&gt;&lt;/a&gt;登录模块&lt;/h1&gt;&lt;p&gt;&lt;code&gt;class Login(HttpClient)&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;类初始化&lt;br&gt;`
+    
+    </summary>
+    
+      <category term="好玩" scheme="http://blog.cannot.cc/categories/%E5%A5%BD%E7%8E%A9/"/>
+    
+    
+      <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
+    
+      <category term="QQ" scheme="http://blog.cannot.cc/tags/QQ/"/>
+    
+      <category term="聊天" scheme="http://blog.cannot.cc/tags/%E8%81%8A%E5%A4%A9/"/>
+    
+      <category term="机器人" scheme="http://blog.cannot.cc/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WebQQ与聊天机器人的玩法</title>
     <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html"/>
     <id>http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html</id>
     <published>2017-06-06T15:06:19.000Z</published>
-    <updated>2017-06-06T15:15:21.502Z</updated>
+    <updated>2017-06-08T19:01:02.869Z</updated>
     
     <summary type="html">
     
