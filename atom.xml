@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.cannot.cc/"/>
-  <updated>2017-07-04T12:04:51.718Z</updated>
+  <updated>2017-07-09T01:51:19.932Z</updated>
   <id>http://blog.cannot.cc/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何使用Win10开机推荐的背景图作为桌面背景</title>
+    <link href="http://blog.cannot.cc/%E4%BD%BF%E7%94%A8Win10%E5%BC%80%E6%9C%BA%E6%8E%A8%E8%8D%90%E7%9A%84%E8%83%8C%E6%99%AF%E5%9B%BE%E4%BD%9C%E4%B8%BA%E6%A1%8C%E9%9D%A2%E8%83%8C%E6%99%AF.html"/>
+    <id>http://blog.cannot.cc/使用Win10开机推荐的背景图作为桌面背景.html</id>
+    <published>2017-07-09T00:01:29.000Z</published>
+    <updated>2017-07-09T01:51:19.932Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;找到他们！&quot;&gt;&lt;a href=&quot;#找到他们！&quot; class=&quot;headerlink&quot; title=&quot;找到他们！&quot;&gt;&lt;/a&gt;找到他们！&lt;/h1&gt;&lt;p&gt;这些图片的位置在：&lt;code&gt;C:\Users\YOUR_USER_NAME\AppData\Local\Packa
+    
+    </summary>
+    
+      <category term="Tips" scheme="http://blog.cannot.cc/categories/Tips/"/>
+    
+    
+      <category term="桌面" scheme="http://blog.cannot.cc/tags/%E6%A1%8C%E9%9D%A2/"/>
+    
+      <category term="Win10" scheme="http://blog.cannot.cc/tags/Win10/"/>
+    
+      <category term="Windows" scheme="http://blog.cannot.cc/tags/Windows/"/>
+    
+      <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.cannot.cc/Workers%20on%20tap%E3%80%90The%20Economist%20Jan%203rd%202015%E3%80%91.html"/>
+    <id>http://blog.cannot.cc/Workers on tap【The Economist Jan 3rd 2015】.html</id>
+    <published>2017-07-05T11:33:11.761Z</published>
+    <updated>2017-07-05T11:34:19.990Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The rise ofthe on-demand economyposes diﬃcult questions forworkers, companies and politicians&lt;/p&gt;
+&lt;p&gt;I N THE  early 20th  centuryHenryFor
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.cannot.cc/%E8%AE%A9%E7%A5%9E%E5%93%AD%E6%B3%A3-%E8%AF%84%E3%80%8AThe%20Interview%E3%80%8B.html"/>
+    <id>http://blog.cannot.cc/让神哭泣-评《The Interview》.html</id>
+    <published>2017-07-05T09:56:25.113Z</published>
+    <updated>2017-07-05T09:56:46.221Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;电影资源&quot;&gt;&lt;a href=&quot;#电影资源&quot; class=&quot;headerlink&quot; title=&quot;电影资源&quot;&gt;&lt;/a&gt;电影资源&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;http://pan.baidu.com/s/1qY8tjE8&quot; target=&quot;_blank&quot; rel=
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>中国电影人最缺乏的是耐心吗？</title>
@@ -47,14 +106,16 @@
   
   <entry>
     <title>WebQQ与聊天机器人的玩法</title>
-    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html"/>
-    <id>http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html</id>
+    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html"/>
+    <id>http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html</id>
     <published>2017-06-06T15:06:19.000Z</published>
-    <updated>2017-06-08T19:01:02.869Z</updated>
+    <updated>2017-06-08T09:31:34.190Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;a href=&quot;#QQ小黄鸡VPS挂机版&quot; class=&quot;headerlink&quot; title=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;/a&gt;QQ小黄鸡VPS挂机版&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/zer
+      &lt;h1 id=&quot;登录模块&quot;&gt;&lt;a href=&quot;#登录模块&quot; class=&quot;headerlink&quot; title=&quot;登录模块&quot;&gt;&lt;/a&gt;登录模块&lt;/h1&gt;&lt;p&gt;&lt;code&gt;class Login(HttpClient)&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;类初始化&lt;br&gt;`
     
     </summary>
     
@@ -73,16 +134,14 @@
   
   <entry>
     <title>WebQQ与聊天机器人的玩法</title>
-    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html"/>
-    <id>http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html</id>
+    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html"/>
+    <id>http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html</id>
     <published>2017-06-06T15:06:19.000Z</published>
-    <updated>2017-06-08T09:31:34.190Z</updated>
+    <updated>2017-06-08T19:01:02.869Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;登录模块&quot;&gt;&lt;a href=&quot;#登录模块&quot; class=&quot;headerlink&quot; title=&quot;登录模块&quot;&gt;&lt;/a&gt;登录模块&lt;/h1&gt;&lt;p&gt;&lt;code&gt;class Login(HttpClient)&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;类初始化&lt;br&gt;`
+      &lt;h1 id=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;a href=&quot;#QQ小黄鸡VPS挂机版&quot; class=&quot;headerlink&quot; title=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;/a&gt;QQ小黄鸡VPS挂机版&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/zer
     
     </summary>
     

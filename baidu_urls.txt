@@ -1,7 +1,10 @@
+http://blog.cannot.cc/使用Win10开机推荐的背景图作为桌面背景.html
+http://blog.cannot.cc/Workers on tap【The Economist Jan 3rd 2015】.html
+http://blog.cannot.cc/让神哭泣-评《The Interview》.html
 http://blog.cannot.cc/基于批判性思维的新闻评论实例分析.html
 http://blog.cannot.cc/Ext2Fsd.html
-http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html
 http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html
+http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html
 http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html
 http://blog.cannot.cc/hello-world.html
 http://blog.cannot.cc/大鱼海棠影评.html
