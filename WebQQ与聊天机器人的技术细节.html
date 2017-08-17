@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="登录模块class Login(HttpClient)  类初始化```pythondef init(self, vpath,qq_number=0,params=None):self.initTime = time.time()self.VPath = vpath  # QRCode保存路径self.UI_PTLOGIN2_URL = params.get(‘UI_PTLOGIN2_URL’,">
+<meta name="description" content="登录模块class Login(HttpClient)  类初始化1234567891011121314151617181920212223242526272829303132333435def __init__(self, vpath,qq_number=0,params=None):    self.initTime = time.time()    self.VPath = vpath  #">
 <meta name="keywords" content="Python,QQ,聊天,机器人">
 <meta property="og:type" content="article">
-<meta property="og:title" content="WebQQ与聊天机器人的玩法">
+<meta property="og:title" content="WebQQ与聊天机器人的技术细节">
 <meta property="og:url" content="http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html">
 <meta property="og:site_name" content="弹簧振子的博客">
-<meta property="og:description" content="登录模块class Login(HttpClient)  类初始化```pythondef init(self, vpath,qq_number=0,params=None):self.initTime = time.time()self.VPath = vpath  # QRCode保存路径self.UI_PTLOGIN2_URL = params.get(‘UI_PTLOGIN2_URL’,">
-<meta property="og:updated_time" content="2017-06-08T09:31:34.190Z">
+<meta property="og:description" content="登录模块class Login(HttpClient)  类初始化1234567891011121314151617181920212223242526272829303132333435def __init__(self, vpath,qq_number=0,params=None):    self.initTime = time.time()    self.VPath = vpath  #">
+<meta property="og:updated_time" content="2017-08-17T02:54:14.552Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WebQQ与聊天机器人的玩法">
-<meta name="twitter:description" content="登录模块class Login(HttpClient)  类初始化```pythondef init(self, vpath,qq_number=0,params=None):self.initTime = time.time()self.VPath = vpath  # QRCode保存路径self.UI_PTLOGIN2_URL = params.get(‘UI_PTLOGIN2_URL’,">
+<meta name="twitter:title" content="WebQQ与聊天机器人的技术细节">
+<meta name="twitter:description" content="登录模块class Login(HttpClient)  类初始化1234567891011121314151617181920212223242526272829303132333435def __init__(self, vpath,qq_number=0,params=None):    self.initTime = time.time()    self.VPath = vpath  #">
 
 
 
@@ -141,7 +141,7 @@
 
 
 
-  <title>WebQQ与聊天机器人的玩法 | 弹簧振子的博客</title>
+  <title>WebQQ与聊天机器人的技术细节 | 弹簧振子的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -404,7 +404,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">WebQQ与聊天机器人的玩法</h2>
+          <h2 class="post-title" itemprop="name headline">WebQQ与聊天机器人的技术细节</h2>
         
 
         <div class="post-meta">
@@ -466,7 +466,7 @@
 
           
           
-             <span id="/WebQQ与聊天机器人的技术细节.html" class="leancloud_visitors" data-flag-title="WebQQ与聊天机器人的玩法">
+             <span id="/WebQQ与聊天机器人的技术细节.html" class="leancloud_visitors" data-flag-title="WebQQ与聊天机器人的技术细节">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -531,9 +531,7 @@
       
         <h1 id="登录模块"><a href="#登录模块" class="headerlink" title="登录模块"></a>登录模块</h1><p><code>class Login(HttpClient)</code></p>
 <ol>
-<li><p>类初始化<br>```python<br>def <strong>init</strong>(self, vpath,qq_number=0,params=None):<br>self.initTime = time.time()<br>self.VPath = vpath  # QRCode保存路径<br>self.UI_PTLOGIN2_URL = params.get(‘UI_PTLOGIN2_URL’, ‘’)<br>self.QQ_LOGIN_URL =  params.get(‘QQ_LOGIN_URL’)<br>self.ClientID = params.get(‘ClinetID’)<br>self.PSessionID = params.get(‘PSessionID’)<br>self.QQ_GROUP_API_URL = params.get(‘QQ_GROUP_API_URL’)<br>self.REFERER = params.get(‘REFERER’)<br>self.MaxTryTime = params.get(‘MaxTryTime’,5)</p>
-<p>AdminQQ = int(qq_number)</p>
-<h1 id="1-从-‘http-w-qq-com-‘-get"><a href="#1-从-‘http-w-qq-com-‘-get" class="headerlink" title="1. 从 ‘http://w.qq.com/‘ get"></a>1. 从 ‘<a href="http://w.qq.com/" target="_blank" rel="external">http://w.qq.com/</a>‘ get</h1><h1 id="2-从-UI-PTLOGIN2-URL-‘https-ui-ptlogin2-qq-com-cgi-bin-login-daid-164-amp-target-self-amp-style-16-amp-mibao-css-m-webqq-amp-appid-501004106-amp-enable-qlogin-0-amp-no-verifyimg-1-amp-s-url-http-3A-2F-2Fw-own-qq-number-com-2Fproxy-html-amp-f-url-loginerroralert-amp-strong-login-1-amp-login-state-10-amp-t-20131024001‘-获取登录页面（以w-qq-com为Referer头部），-从login-html中获取APPID-SIGN（登录证书-JS-VERSION-MiBaoCss"><a href="#2-从-UI-PTLOGIN2-URL-‘https-ui-ptlogin2-qq-com-cgi-bin-login-daid-164-amp-target-self-amp-style-16-amp-mibao-css-m-webqq-amp-appid-501004106-amp-enable-qlogin-0-amp-no-verifyimg-1-amp-s-url-http-3A-2F-2Fw-own-qq-number-com-2Fproxy-html-amp-f-url-loginerroralert-amp-strong-login-1-amp-login-state-10-amp-t-20131024001‘-获取登录页面（以w-qq-com为Referer头部），-从login-html中获取APPID-SIGN（登录证书-JS-VERSION-MiBaoCss" class="headerlink" title="2. 从 UI_PTLOGIN2_URL = ‘https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001‘ 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?)"></a>2. 从 UI_PTLOGIN2_URL = ‘<a href="https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001" target="_blank" rel="external">https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001</a>‘ 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?)</h1><h1 id="3-从login-html中获取mibao-css"><a href="#3-从login-html中获取mibao-css" class="headerlink" title="3. 从login_html中获取mibao_css"></a>3. 从login_html中获取mibao_css</h1><h1 id="4-开始时间-datetime-datetime-utcnow-》-millis"><a href="#4-开始时间-datetime-datetime-utcnow-》-millis" class="headerlink" title="4. 开始时间 datetime.datetime.utcnow() ==》 millis"></a>4. 开始时间 datetime.datetime.utcnow() ==》 millis</h1><h1 id="5-尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ-LOGIN-URL-‘https-ssl-ptlogin2-qq-com-ptqrlogin-ptqrtoken-0-amp-webqq-type-10-amp-remember-uin-1-amp-login2qq-1-amp-aid-1-amp-u1-http-3A-2F-2Fw-qq-com-2Fproxy-html-3Flogin2qq-3D1-26webqq-type-3D10-amp-ptredirect-0-amp-ptlang-2052-amp-daid-164-amp-from-ui-1-amp-pttype-1-amp-dumy-amp-fp-loginerroralert-amp-action-0-0-2-amp-mibao-css-3-amp-t-1-amp-g-1-amp-js-type-0-amp-js-ver-4-amp-login-sig-5-amp-pt-randsalt-2‘-登录，得到get的response，检查是否扫码（登录）"><a href="#5-尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ-LOGIN-URL-‘https-ssl-ptlogin2-qq-com-ptqrlogin-ptqrtoken-0-amp-webqq-type-10-amp-remember-uin-1-amp-login2qq-1-amp-aid-1-amp-u1-http-3A-2F-2Fw-qq-com-2Fproxy-html-3Flogin2qq-3D1-26webqq-type-3D10-amp-ptredirect-0-amp-ptlang-2052-amp-daid-164-amp-from-ui-1-amp-pttype-1-amp-dumy-amp-fp-loginerroralert-amp-action-0-0-2-amp-mibao-css-3-amp-t-1-amp-g-1-amp-js-type-0-amp-js-ver-4-amp-login-sig-5-amp-pt-randsalt-2‘-登录，得到get的response，检查是否扫码（登录）" class="headerlink" title="5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = ‘https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken={0}&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid={1}&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-{2}&amp;mibao_css={3}&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver={4}&amp;login_sig={5}&amp;pt_randsalt=2‘ 登录，得到get的response，检查是否扫码（登录）"></a>5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = ‘<a href="https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken={0}&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid={1}&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-{2}&amp;mibao_css={3}&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver={4}&amp;login_sig={5}&amp;pt_randsalt=2" target="_blank" rel="external">https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken={0}&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid={1}&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-{2}&amp;mibao_css={3}&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver={4}&amp;login_sig={5}&amp;pt_randsalt=2</a>‘ 登录，得到get的response，检查是否扫码（登录）</h1><h1 id="login-html-self-Get-self-QQ-LOGIN-URL-format-util-getQRtoken-QRSig-APPID-util-date-to-millis-datetime-datetime-utcnow-StarTime-MiBaoCss-JS-VERSION-SIGN-Refer-self-UI-PTLOGIN2-URL"><a href="#login-html-self-Get-self-QQ-LOGIN-URL-format-util-getQRtoken-QRSig-APPID-util-date-to-millis-datetime-datetime-utcnow-StarTime-MiBaoCss-JS-VERSION-SIGN-Refer-self-UI-PTLOGIN2-URL" class="headerlink" title="login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)"></a><code>login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)</code></h1><h1 id="6-扫码后删除二维码图片"><a href="#6-扫码后删除二维码图片" class="headerlink" title="6. 扫码后删除二维码图片"></a>6. 扫码后删除二维码图片</h1><h1 id="7-记录登录账号的昵称"><a href="#7-记录登录账号的昵称" class="headerlink" title="7. 记录登录账号的昵称"></a>7. 记录登录账号的昵称</h1><h1 id="8-从cookie中得到PTWebQQ"><a href="#8-从cookie中得到PTWebQQ" class="headerlink" title="8. 从cookie中得到PTWebQQ"></a>8. 从cookie中得到PTWebQQ</h1><h1 id="9-先后post-get两个url，验证是否登录成功。"><a href="#9-先后post-get两个url，验证是否登录成功。" class="headerlink" title="9. 先后post,get两个url，验证是否登录成功。"></a>9. 先后post,get两个url，验证是否登录成功。</h1><h1 id="10-从response中获取VFWebQQ，MyUIN，并更新self-PSessionID"><a href="#10-从response中获取VFWebQQ，MyUIN，并更新self-PSessionID" class="headerlink" title="10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID"></a>10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID</h1><h1 id="11-随机生成msgId，"><a href="#11-随机生成msgId，" class="headerlink" title="11. 随机生成msgId，"></a>11. 随机生成msgId，</h1></li>
+<li>类初始化<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, vpath,qq_number=<span class="number">0</span>,params=None)</span>:</span></div><div class="line">    self.initTime = time.time()</div><div class="line">    self.VPath = vpath  <span class="comment"># QRCode保存路径</span></div><div class="line">    self.UI_PTLOGIN2_URL = params.get(<span class="string">'UI_PTLOGIN2_URL'</span>, <span class="string">''</span>)</div><div class="line">    self.QQ_LOGIN_URL =  params.get(<span class="string">'QQ_LOGIN_URL'</span>)</div><div class="line">    self.ClientID = params.get(<span class="string">'ClinetID'</span>)</div><div class="line">    self.PSessionID = params.get(<span class="string">'PSessionID'</span>)</div><div class="line">    self.QQ_GROUP_API_URL = params.get(<span class="string">'QQ_GROUP_API_URL'</span>)</div><div class="line">    self.REFERER = params.get(<span class="string">'REFERER'</span>)</div><div class="line">    self.MaxTryTime = params.get(<span class="string">'MaxTryTime'</span>,<span class="number">5</span>)</div><div class="line"></div><div class="line">    AdminQQ = int(qq_number)</div><div class="line"></div><div class="line">    <span class="comment"># 1. 从 'http://w.qq.com/' get</span></div><div class="line"></div><div class="line">    <span class="comment"># 2. 从 UI_PTLOGIN2_URL = 'https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001' 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?)</span></div><div class="line"></div><div class="line">    <span class="comment"># 3. 从login_html中获取mibao_css</span></div><div class="line"></div><div class="line">    <span class="comment"># 4. 开始时间 datetime.datetime.utcnow() ==》 millis</span></div><div class="line"></div><div class="line">    <span class="comment"># 5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = 'https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken=&#123;0&#125;&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid=&#123;1&#125;&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-&#123;2&#125;&amp;mibao_css=&#123;3&#125;&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver=&#123;4&#125;&amp;login_sig=&#123;5&#125;&amp;pt_randsalt=2' 登录，得到get的response，检查是否扫码（登录）</span></div><div class="line">    <span class="comment">#    `login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)`</span></div><div class="line"></div><div class="line">    <span class="comment"># 6. 扫码后删除二维码图片</span></div><div class="line"></div><div class="line">    <span class="comment"># 7. 记录登录账号的昵称</span></div><div class="line"></div><div class="line">    <span class="comment"># 8. 从cookie中得到PTWebQQ</span></div><div class="line"></div><div class="line">    <span class="comment"># 9. 先后post,get两个url，验证是否登录成功。</span></div><div class="line"></div><div class="line">    <span class="comment"># 10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID</span></div><div class="line"></div><div class="line">    <span class="comment"># 11. 随机生成msgId，</span></div></pre></td></tr></table></figure></li>
 </ol>
 
       
@@ -619,8 +617,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/WebQQ与聊天机器人的玩法.html" rel="next" title="WebQQ与聊天机器人的玩法">
-                <i class="fa fa-chevron-left"></i> WebQQ与聊天机器人的玩法
+              <a href="/利用Hexo搭建个人博客站点全纪录.html" rel="next" title="利用Hexo搭建个人博客站点全纪录">
+                <i class="fa fa-chevron-left"></i> 利用Hexo搭建个人博客站点全纪录
               </a>
             
           </div>
@@ -629,8 +627,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Ext2Fsd.html" rel="prev" title="Ext2fsd软件对windows文件系统性能的坑比表现">
-                Ext2fsd软件对windows文件系统性能的坑比表现 <i class="fa fa-chevron-right"></i>
+              <a href="/WebQQ与聊天机器人的玩法.html" rel="prev" title="WebQQ与聊天机器人的玩法">
+                WebQQ与聊天机器人的玩法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -733,7 +731,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -755,7 +753,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -835,7 +833,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#登录模块"><span class="nav-number">1.</span> <span class="nav-text">登录模块</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#1-从-‘http-w-qq-com-‘-get"><span class="nav-number">2.</span> <span class="nav-text">1. 从 ‘http://w.qq.com/‘ get</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-从-UI-PTLOGIN2-URL-‘https-ui-ptlogin2-qq-com-cgi-bin-login-daid-164-amp-target-self-amp-style-16-amp-mibao-css-m-webqq-amp-appid-501004106-amp-enable-qlogin-0-amp-no-verifyimg-1-amp-s-url-http-3A-2F-2Fw-own-qq-number-com-2Fproxy-html-amp-f-url-loginerroralert-amp-strong-login-1-amp-login-state-10-amp-t-20131024001‘-获取登录页面（以w-qq-com为Referer头部），-从login-html中获取APPID-SIGN（登录证书-JS-VERSION-MiBaoCss"><span class="nav-number">3.</span> <span class="nav-text">2. 从 UI_PTLOGIN2_URL = ‘https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&target=self&style=16&mibao_css=m_webqq&appid=501004106&enable_qlogin=0&no_verifyimg=1&s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&f_url=loginerroralert&strong_login=1&login_state=10&t=20131024001‘ 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-从login-html中获取mibao-css"><span class="nav-number">4.</span> <span class="nav-text">3. 从login_html中获取mibao_css</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-开始时间-datetime-datetime-utcnow-》-millis"><span class="nav-number">5.</span> <span class="nav-text">4. 开始时间 datetime.datetime.utcnow() ==》 millis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ-LOGIN-URL-‘https-ssl-ptlogin2-qq-com-ptqrlogin-ptqrtoken-0-amp-webqq-type-10-amp-remember-uin-1-amp-login2qq-1-amp-aid-1-amp-u1-http-3A-2F-2Fw-qq-com-2Fproxy-html-3Flogin2qq-3D1-26webqq-type-3D10-amp-ptredirect-0-amp-ptlang-2052-amp-daid-164-amp-from-ui-1-amp-pttype-1-amp-dumy-amp-fp-loginerroralert-amp-action-0-0-2-amp-mibao-css-3-amp-t-1-amp-g-1-amp-js-type-0-amp-js-ver-4-amp-login-sig-5-amp-pt-randsalt-2‘-登录，得到get的response，检查是否扫码（登录）"><span class="nav-number">6.</span> <span class="nav-text">5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = ‘https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken={0}&webqq_type=10&remember_uin=1&login2qq=1&aid={1}&u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&ptredirect=0&ptlang=2052&daid=164&from_ui=1&pttype=1&dumy=&fp=loginerroralert&action=0-0-{2}&mibao_css={3}&t=1&g=1&js_type=0&js_ver={4}&login_sig={5}&pt_randsalt=2‘ 登录，得到get的response，检查是否扫码（登录）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#login-html-self-Get-self-QQ-LOGIN-URL-format-util-getQRtoken-QRSig-APPID-util-date-to-millis-datetime-datetime-utcnow-StarTime-MiBaoCss-JS-VERSION-SIGN-Refer-self-UI-PTLOGIN2-URL"><span class="nav-number">7.</span> <span class="nav-text">login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-扫码后删除二维码图片"><span class="nav-number">8.</span> <span class="nav-text">6. 扫码后删除二维码图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-记录登录账号的昵称"><span class="nav-number">9.</span> <span class="nav-text">7. 记录登录账号的昵称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-从cookie中得到PTWebQQ"><span class="nav-number">10.</span> <span class="nav-text">8. 从cookie中得到PTWebQQ</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-先后post-get两个url，验证是否登录成功。"><span class="nav-number">11.</span> <span class="nav-text">9. 先后post,get两个url，验证是否登录成功。</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-从response中获取VFWebQQ，MyUIN，并更新self-PSessionID"><span class="nav-number">12.</span> <span class="nav-text">10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-随机生成msgId，"><span class="nav-number">13.</span> <span class="nav-text">11. 随机生成msgId，</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#登录模块"><span class="nav-number">1.</span> <span class="nav-text">登录模块</span></a></li></ol></div>
             
 
           </div>

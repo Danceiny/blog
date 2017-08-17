@@ -387,6 +387,417 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Danceiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="弹簧振子的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/利用Hexo搭建个人博客站点全纪录.html" itemprop="url">利用Hexo搭建个人博客站点全纪录</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-13T15:51:03+08:00">
+                2017-05-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DOSOMETHING/" itemprop="url" rel="index">
+                    <span itemprop="name">DOSOMETHING</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/利用Hexo搭建个人博客站点全纪录.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/利用Hexo搭建个人博客站点全纪录.html" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/利用Hexo搭建个人博客站点全纪录.html" class="leancloud_visitors" data-flag-title="利用Hexo搭建个人博客站点全纪录">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  765
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  3
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="需求澄清"><a href="#需求澄清" class="headerlink" title="需求澄清"></a>需求澄清</h1><ul>
+<li>个人博客。</li>
+<li>静态的即可。</li>
+<li>可由GitHub Pages或者Coding.net Pages服务托管。</li>
+<li>要有域名，好记。</li>
+<li>博客中有图片，需要稳定的存储。</li>
+<li>维护与操作系统平台无关（因为自己各种操作系统切换）。</li>
+</ul>
+<h1 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h1><p>Hexo + GitHub/Coding Pages双托管 + 腾讯云解析 + 七牛云图片存储</p>
+<h1 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h1><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>首先安装npm，使用npm安装hexo。</p>
+<ul>
+<li><a href="https://www.npmjs.com/" target="_blank" rel="external">npm</a></li>
+<li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a></li>
+</ul>
+<h2 id="主题Next"><a href="#主题Next" class="headerlink" title="主题Next"></a>主题Next</h2><p>安装：<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>仓库地址：<a href="https://github.com/Danceiny/blog" target="_blank" rel="external">https://github.com/Danceiny/blog</a><br>Pages地址：<a href="https://danceiny.github.io/blog" target="_blank" rel="external">https://danceiny.github.io/blog</a><br>添加CNAME文件，指向blog.cannot.cc，Pages地址重定向到该域名。</p>
+<h2 id="Coding"><a href="#Coding" class="headerlink" title="Coding"></a>Coding</h2><p>同上。</p>
+<h2 id="腾讯云解析"><a href="#腾讯云解析" class="headerlink" title="腾讯云解析"></a>腾讯云解析</h2><p>已有域名（已备案）: <a href="http://cannot.cc" target="_blank" rel="external">cannot.cc</a></p>
+<p>添加二级域名: <a href="http://blog.cannot.cc">blog.cannot.cc</a></p>
+<p>添加CNAME类型的记录，记录值设置为danceiny.github.io.</p>
+<p>把www.blog.cannot.cc记录到pages.coding.me.</p>
+<p>顺便把cannot.cc解析到 <a href="http://danceiny.github.io" target="_blank" rel="external">http://danceiny.github.io</a> 了。（原来在Github上的个人主页）。有空再修改。</p>
+<p>注意：</p>
+<ol>
+<li>腾讯云解析的记录值是比较需要关注的。</li>
+<li>www是个神奇的东西，<a href="http://blog.cannot.cc">http://blog.cannot.cc</a> 和 <a href="http://www.blog.cannot.cc" target="_blank" rel="external">http://www.blog.cannot.cc</a> 是不一样的两个东西。</li>
+</ol>
+<h2 id="七牛图床"><a href="#七牛图床" class="headerlink" title="七牛图床"></a>七牛图床</h2><p><a href="https://portal.qiniu.com/bucket/" target="_blank" rel="external">https://portal.qiniu.com/bucket/</a><br>有很多官方工具可以使用，命令行，GUI，但是目前我感觉不太用户友好。访问秘钥就是两个：Access Key和Secret Key。Bucket像是GitHub里的仓库吧，我叫它<strong>对象存储仓库</strong>。</p>
+<h2 id="阅读次数统计"><a href="#阅读次数统计" class="headerlink" title="阅读次数统计"></a>阅读次数统计</h2><ol>
+<li>可在Next中配置，使用leancloud.cn <a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%8" target="_blank" rel="external">参见博客</a></li>
+</ol>
+<h2 id="社交分享"><a href="#社交分享" class="headerlink" title="社交分享"></a>社交分享</h2><p>直接在Next中开启jiathis即可。不支持https是个隐患。</p>
+<h2 id="站点搜索"><a href="#站点搜索" class="headerlink" title="站点搜索"></a>站点搜索</h2><p>可选的几个服务都是收费的，所以我选了本地的搜索。按照Next的教程配置即可。</p>
+<h2 id="百度联盟"><a href="#百度联盟" class="headerlink" title="百度联盟"></a>百度联盟</h2><p><a href="http://union.baidu.com" target="_blank" rel="external">http://union.baidu.com</a><br>申请，未通过，网站内容还是少了点。</p>
+<h2 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h2><p>站点访问统计。百度统计的账号和百度联盟账号可以不一样，不过还是统一账号比较好，方便管理。</p>
+<h2 id="谷歌分析"><a href="#谷歌分析" class="headerlink" title="谷歌分析"></a>谷歌分析</h2><h2 id="跟帖回复评论"><a href="#跟帖回复评论" class="headerlink" title="跟帖回复评论"></a>跟帖回复评论</h2><p>使用Facebook的评论系统。</p>
+<p>网易云跟帖未引入，不过看起来效果不错。</p>
+<h2 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h2><ol>
+<li><p>Hexo优化之为外部链接添加nofollow  <a href="https://liuzhichao.com/2016/hexo-auto-nofollow.html" target="_blank" rel="external">https://liuzhichao.com/2016/hexo-auto-nofollow.html</a></p>
+</li>
+<li><p><a href="https://eason-yang.com/2016/08/03/tips-for-hexo-and-hexo-next/" target="_blank" rel="external">https://eason-yang.com/2016/08/03/tips-for-hexo-and-hexo-next/</a></p>
+</li>
+<li><p><a href="https://juejin.im/post/590b451a0ce46300588c43a0" target="_blank" rel="external">hexo高阶教程：教你怎么让你的hexo博客在搜索引擎中排第一</a></p>
+</li>
+</ol>
+<h2 id="站点地图"><a href="#站点地图" class="headerlink" title="站点地图"></a>站点地图</h2><p>通过npm下载插件。有专门针对百度的。可做SEO。</p>
+<p>sitemaps.xml</p>
+<h2 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h2><p>通过npm下载插件。</p>
+<h2 id="Facebook-Audience广告投放"><a href="#Facebook-Audience广告投放" class="headerlink" title="Facebook Audience广告投放"></a>Facebook Audience广告投放</h2><p>未搞定。</p>
+<h2 id="Hexo部署"><a href="#Hexo部署" class="headerlink" title="Hexo部署"></a>Hexo部署</h2><p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a></p>
+<p>可部署到百度，方便搜索引擎收录。</p>
+<h2 id="CNAME覆盖问题"><a href="#CNAME覆盖问题" class="headerlink" title="CNAME覆盖问题"></a>CNAME覆盖问题</h2><p><a href="https://www.stayhungry.me/2015/07/26/%E6%90%AD%E5%BB%BAHexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" target="_blank" rel="external">https://www.stayhungry.me/2015/07/26/%E6%90%AD%E5%BB%BAHexo%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</a></p>
+<h2 id="利用分支备份Hexo项目源代码"><a href="#利用分支备份Hexo项目源代码" class="headerlink" title="利用分支备份Hexo项目源代码"></a>利用分支备份Hexo项目源代码</h2><p>在博客对应的GitHub项目上创建Hexo分支。Pages服务用的是master分支。</p>
+<p>yaml重要配置文件不应该上传到公开项目。</p>
+<h2 id="去掉post的url中的日期"><a href="#去掉post的url中的日期" class="headerlink" title="去掉post的url中的日期"></a>去掉post的url中的日期</h2><p>permalink: :title.html</p>
+<h2 id="其他优秀的同类型博客"><a href="#其他优秀的同类型博客" class="headerlink" title="其他优秀的同类型博客"></a>其他优秀的同类型博客</h2><p><a href="http://litten.me/" target="_blank" rel="external">http://litten.me/</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/hello-world.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Danceiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="弹簧振子的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/hello-world.html" itemprop="url">Hello World</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-07T15:33:33+08:00">
+                2017-05-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/hello-world.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/hello-world.html" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/hello-world.html" class="leancloud_visitors" data-flag-title="Hello World">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  78
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/大鱼海棠影评.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -689,208 +1100,6 @@
             <p>TAM<br>Switching Cost<br>UCD<br>UTAUT<br>Loyalty Design<br>Growth Hacking<br>ELM<br>Tangible Design: 极度易用（小孩易学）</p>
 <p>计算智能-感知智能-认知智能-类人智能</p>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/Q10.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Danceiny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="弹簧振子的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Q10.html" itemprop="url">未命名</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-27T22:21:28+08:00">
-                2016-04-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/Q10.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/Q10.html" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/Q10.html" class="leancloud_visitors" data-flag-title="">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计</span>
-                
-                <span title="字数统计">
-                  1,831
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
-                
-                <span title="阅读时长">
-                  6
-                </span>
-              
-            </div>
-          
-
-          
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="非死不可"><a href="#非死不可" class="headerlink" title="非死不可"></a>非死不可</h1><pre><code>                    一
-那天任何从工厂的流水线上下来，工作服一脱就去了工厂外面的一家网吧。收银台网管年轻稚嫩的脸，盯着任何掏出的身份证上那张同样年轻稚嫩的脸，看了许久许久，嘴里叼的香烟都要燃到牙齿上了。
-“有这么好看？快点，我队友还等着我呢。”任何的眼睛说不上大，可是凌厉。说话一急促的时候，淘气的几缕发丝就飘进了唇红齿白间。
-网管愣过神来，把身份证递还给了任何。
-任何接过身份证立马揣进兜里，四下探望，人声鼎沸，烟雾缭绕。任何随便找了一台电脑开始上网，和素未谋面的游戏情侣一起厮杀。任何一直眉头紧锁，第三把还没开始就关了游戏。然后她漫无目的地浏览起了门户网站。
-也不知道看了多少明星八卦再加多少搞笑段子，任何握鼠标的右手，再也没有那么勤奋地点点点滑滑滑了；任何那两弯好看的眉毛下面毛细血管突出的眼睛，眼白挤开了瞳孔。
-坐在她旁边的同样是一群稚气未脱的少年，他们头发染成各式奇特的颜色，敲键盘的手上一定有一枚不知是钻石还是玻璃还是塑料的戒指，以及一支刚好燃掉一半的香烟。
-任何斜眼看过去，他们手指下键盘的缝隙里，刚刚跌落的圆柱形的烟灰一瞬间就损失了形状，再也撑不起一根香烟的直挺，流露出其内心的空虚。
-                    二
-任何恢复意识的时候，一睁眼看到的不再是厂房宿舍上铺的床板，而是白得一清二楚的天花板。
-穿着白大褂的人走过来，而不是穿着蓝色工作服的主管。白大褂把任何的眼皮拨弄来拨弄去，用笔记下了什么就转身离开。
-任何知道自己在医院。可是想不起来自己为什么会在医院。所能回忆起的最近的场景，就是那根香烟，那根香烟，对，网管嘴里的那根，和坐在旁边上网的少年手指夹住的那根。
-应该是那根香烟点燃了整个网吧，嗯，低头就能看到满地凌乱的布线，抬头就能看见墙沿裸露的电线，不发生火灾就奇怪了。任何不由得要咧开嘴笑，大概就是在一年前，坐在她前面的那个男同学，给她讲火线零线和变压器，讲得眉飞色舞，任何一句也没听进去。她只是傻傻地看着他讲，不时跟着他的手势看看纸上排列整齐的线路。那种整齐感，是任何在一片废墟般的家里无法奢望的。
-后来看到图片上整齐划一的工厂流水线，任何跟回家探亲的表姐说，“嗯，带我去这里吧。”
-任何忽然感到嘴角强烈的撕裂感。疼，但不钻心，因为一口气就呼出去了那些不可述说的疼痛。
-                    三
-后来的情节发展出乎任何的意料，也出乎任何的理解。
-任何醒来第二天，就有两个警察跑来问话，问些稀奇古怪的话，任何只能一问三不知。
-警察无可奈何，结束了毫无“营养”的问话，义正言辞道：“在这件事上希望你不要有任何隐瞒，坦白从宽抗拒从严。”
-任何陡地怒了，“你以为我在隐瞒什么！？”
-两个穿制服的面不改色耳语一番，稍年轻的那个咳嗽了两声，带着明显的装腔说道：
-“十九条人命可不是什么小事，所有知情不报都是隐瞒，会酿成特别严重的后果，请你务必——嗯哼——知无不言，言无不尽。”
-任何差点没晕过去。敢情警察怀疑她背负了十九条人命？
-很想解释的时候，发现自己只能只会说一句我不知道，任何知道，任何不知道。
-任何第一时间想起来自己在宿舍床边的桌子上写了半封信，那是在她发现男朋友劈腿后又在存款个位数的情况下被扣一个月补贴的当头，胡乱发了一通牢骚。不消说，任何在信中提到想杀人。
-任何的信，没有写收信人，但是任何心中有一个默认的收信人。当然不是她那负心的男朋友，而是那个给她讲火线零线和变压器的男同学。
-大概任何永远也不会理解，是那个男同学，给她完成了这个堪称“伟大”的心愿：
-
-    这个月真惨，糟透了，没一件好事情。过几天就十九岁生日了，我就这么活    了十九年，还没交够十九个男朋友。当我死的那一天，总该有十九个十九岁的男    孩子陪我才好。贾史久三个字一共十八笔，他也就刚好活了十八笔。我能活到今    天，不晓得是运气还是霉气呢。
-
-                    四
-贾史久他爸叫贾历长，不过贾历长的生命历史着实不长，十九岁不到就一命呜呼。贾历长倒不是因体弱多病罹患绝症而死，而是死在了坦克底下。贾史久知道他爸小时候老喜欢坦克了，所以觉得他爸能在最青春的年纪死于所爱，实乃是一种伟大。何况，贾史久他老妈当年十几岁挺个大肚子做了未嫁的寡妇，更是显出了贾历长的英雄气概。
-虽说贾史久从小没见过亲爸爸，但是后爸陆陆续续好几个，待他也好，逆来顺受，好吃好喝好玩招待。贾史久也给他妈争气，从小就是各种第一专业户。
-贾史久十三岁那年，有好事的邻居问他是不是他妈和中科院某科学家生的野种，要不咋这么聪明呢。贾史久没吭声。
-当晚半夜贾史久爬到邻居家，对供电线路做了点手脚，然后一身轻松爬回家一觉睡到天亮。第二天晌午的时候传来噩耗，邻居一家三口死于触电。
-这出乎贾史久的预料。本来只想教训一下那个满口跑野种的女家长的，不料买一送二。贾史久后来听说，女家长在厨房触电后男主人和小孩都跑过去扶人，所以全家跑阴曹地府一起吃午饭了。
-是他们愚蠢。贾史久这样想着，心中负罪感也就慢慢释然了。
-不过贾史久心中还是有些疙瘩，想要搬家，正好母亲改嫁，也就离开了这个时刻提醒着他血债的地方。搬家伴随着转学，也就是这年秋天，他作为插班生，认识了任何。
-
-                    五
-</code></pre>
           
         
       
@@ -1615,7 +1824,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1637,7 +1846,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
