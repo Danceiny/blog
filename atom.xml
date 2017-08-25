@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.cannot.cc/"/>
-  <updated>2017-08-17T02:56:31.429Z</updated>
+  <updated>2017-08-24T10:31:43.585Z</updated>
   <id>http://blog.cannot.cc/</id>
   
   <author>
@@ -14,6 +14,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://blog.cannot.cc/Git%E8%B6%85%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97%E4%B8%8E%E8%B6%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>http://blog.cannot.cc/Git超简明指南与超常用命令.html</id>
+    <published>2017-08-24T07:10:33.294Z</published>
+    <updated>2017-08-24T10:31:43.585Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;git fetch origin branchname:branchname&lt;/p&gt;
+&lt;p&gt;可以把远程某各分支拉去到本地的branchname下，如果没有branchname，则会在本地新建branchname&lt;/p&gt;
+&lt;p&gt;git checkout origin/remo
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>RussellCloud实习面经与入职经历</title>
@@ -321,6 +339,33 @@
       <category term="C语言" scheme="http://blog.cannot.cc/tags/C%E8%AF%AD%E8%A8%80/"/>
     
       <category term="入门" scheme="http://blog.cannot.cc/tags/%E5%85%A5%E9%97%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一天：Kafka入门与项目实战</title>
+    <link href="http://blog.cannot.cc/%E4%B8%80%E5%A4%A9%EF%BC%9AKafka%E5%85%A5%E9%97%A8%E4%B8%8E%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98.html"/>
+    <id>http://blog.cannot.cc/一天：Kafka入门与项目实战.html</id>
+    <published>2016-03-26T09:10:00.000Z</published>
+    <updated>2017-08-25T10:46:08.898Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://kafka.apach
+    
+    </summary>
+    
+      <category term="快速入门快速实践" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/"/>
+    
+      <category term="一天" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/%E4%B8%80%E5%A4%A9/"/>
+    
+    
+      <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
+    
+      <category term="flask" scheme="http://blog.cannot.cc/tags/flask/"/>
+    
+      <category term="Kafka" scheme="http://blog.cannot.cc/tags/Kafka/"/>
     
   </entry>
   
