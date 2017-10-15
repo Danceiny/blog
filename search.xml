@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Git超简明指南与超常用命令]]></title>
-    <url>%2FGit%E8%B6%85%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97%E4%B8%8E%E8%B6%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
-    <content type="text"><![CDATA[git fetch origin branchname:branchname 可以把远程某各分支拉去到本地的branchname下，如果没有branchname，则会在本地新建branchname git checkout origin/remoteName -b localName 获取远程分支remoteName 到本地新分支localName，并跳到localName分支 git push -u origin local_branch_name git push origin –delete scp username@servername:/path/filename /tmp/local_destination]]></content>
+    <title><![CDATA[中国移动研究院老掌门效力华科大，Dian团队步入新主帅黄晓庆时代]]></title>
+    <url>%2F%E9%BB%84%E6%99%93%E5%BA%86.html</url>
+    <content type="text"><![CDATA[编者按：黄晓庆，Dian团队导师，达闼科技创始人兼CEO，前中国移动研究院院长，“千人计划”国家特聘专家。1982年毕业于华中科技大学电信系。2017年8月，就任华中科技大学电子信息与通信学院院长。 “人类最重要的使命，就是摆脱太阳系的束缚。”作为星际迷航的铁杆粉丝，黄晓庆几乎每次演讲，都会观宇宙浩荡而天马行空，论科技浪潮而挥斥方遒。这一次也无例外——2017年10月15日晚，已经担任Dian团队7年兼职导师的著名通信和人工智能专家黄晓庆（Bill Huang），以团队新领军的身份，出现在全体队员面前作主旨演讲，到场聆听的还有“点石创校”学员。此次主旨演讲由已退休交棒的Dian团队创始人刘玉老师主持。刘老师回忆，黄晓庆与Dian团队的缘分，要追溯到2010年启明学院落成之时。彼时，喜择交良友的刘玉老师邀请黄晓庆担任Dian团队导师，此后黄晓庆作为兼职导师，给Dian团队带来了诸多资源。刘老师强调，“一个团队的格局是领军的格局决定的，一个团队的高度是领军的高度决定的”，Dian团队的28位顾问，给行路中的Dian团队指明了“绿洲”的方向——创新创业。随后刘玉老师正式宣布，Dian团队导师黄晓庆成为新主帅，邀请其作主旨演讲。全场掌声雷动，经久不息。 这是一个新的时代。所有人都在瞩目着。“科学把我们带到了一个特别重要的历史局面，这就是第四次工业革命，也许是我们人类前所未见的科学的爆发点，就在未来五十年左右。那这个点是什么？我们叫做“奇点”。我们从事信息科学的可能最美妙的一个梦想就是，我们人类有可能在未来三十年到五十年有可能做出在智能水平上达到甚至超过人类的机器。” 黄晓庆对于人工智能引发第四次工业革命的信心，令人印象深刻——而这显然来自于他对科技创新的深刻洞见与卓越的工程实践能力。“创新就是 Unseat the establishment”，“要有一种挑战传统，挑战权威者，挑战主流的勇气”，在美国这叫 “Cowboy Spirit”，也是我们时代最需要的精神。勇气是为其一，其二是要有“能够挑战传统、权威的能力和水平”。而能力，来自于学习，来自于努力。黄晓庆以亲身经历说法，“不懂英语没法搞国际化”，“管理是科学，是人文的物理学。越是被管理的人，越需要知道你是怎么被管理的”，“现在懂TensorFlow，相当于30年前懂Unix和C语言”。谈及Dian团队未来的发展方向，七年前黄晓庆指向了“拥抱移动互联网”，而现在，业已身为达闼科技创始人兼CEO的黄晓庆，则毫不犹豫地选定了人工智能。从图灵到DeepMind，从飞机到神经网络，从生物细胞到计算机网络，黄晓庆化身“科技史学家”、“生物学家”、“计算机科学家”，带领所有听众遨游了人工智能的过去、现在与将来。而无线电通信专业出身的黄晓庆，亦颇有洞见地指出：5G技术将推动人工智能与机器人的发展，云端机器人网络流量将是人类的100倍左右。 1982年，作为“全武汉第一个留美的自费留学生”，黄晓庆只身一人去了美国。1982年6月，黄晓庆成了美国伊利诺斯州立大学研究生院第一个中国大陆来的学生。1997年，黄晓庆在UT斯达康内部创业，想做全世界最伟大的软交换的移动交换机——用IP技术做交换，颠覆贝尔实验室在60、70年代发明的电路交换技术。2007年，黄晓庆被中国移动请回国，担任中国移动研究院院长。2011年，黄晓庆在斯坦福遇到一位教授生物工程系教授，带着某种“上帝视角”的宏观感的架构师出身的他，“顿悟”到云端机器人大脑的可行性——因为网络的延迟，已经逐渐降到了人类感知不到的程度。2015年，达闼科技成立。“既然要做云端机器人，英文就叫Cloudminds。中文“达闼”音译自“Data”。除了‘数据’，它还是《星际迷航》里一个机器人的名字。‘闼’，最开始我也不认识，跑去查字典，发现是‘推门而入’的意思。这个寓意太好了，马到成功。” 做达闼之前，黄晓庆许了一个宏愿。他要做的事，和所有人工智能从业者都不是竞争关系。他心中的局，更像一个行业托举者，瞄准的是未来人机世界的大规则。 达达马蹄，郑愁予听到的是江南烟雨过客，而黄晓庆听到的是服务机器人的脚步声。“水渺茫而法白，山排闼以争前”，而黄晓庆眼中的达闼科技，显然不止于争前，而是要在他人觉前方渺茫不知所向时，引领一时风骚——做云端智能的基础架构。这般使命感，来自于他的相信。“作为人类必须承认：宇宙法则有可能是被设计的。你瞧，一个粒子里面的结构，和一个星系的结构，基本是一样的，多神奇。造物者早把这个东西给搞明白了，他告诉我们世界就是这个样子，你得‘信’。”当然，如果只是相信，黄晓庆或许也只能”用美丽的雪花”，“在凄凉的大地”，“用孩子的笔体”去写下“相信未来”，而不能以一名工程师的身份，用代码造就一个真实的未来。“哲学家认为自己就是上帝，没有必要去讨论别的事；数学家们想反抗上帝；物理学家想学习上帝；生物学家从某种意义上讲想造上帝的反，要摆脱伊甸园……工程师说都不用，我们再造一个。”正是基于类似的理念，15年前，“旨在通过真实项目实践培养学生的创新能力、实践精神和综合素质”的Dian团队才会诞生在喻家山下——因为相信真实项目实践能够培养人，因为真真正正地主动实践着。而2010年与Dian团队结缘的黄晓庆，兴奋，激动，因为“有组织的优秀学生联合在一起创新是一种很了不起的现象”。 2016年9月，刘玉老师带领Dian团队队员前往深圳参加点石论坛，黄晓庆作为Dian团队导师上台演讲，谈宇宙之恢弘，论云端之架构，台下新老队员听得入神，深受启发。论坛上刘玉老师笑称曾邀请黄晓庆担任我校电信学院院长。不承想一语中的。今年八月底，黄晓庆即将就任电信学院院长的消息似平地惊雷，振奋人心。在非正式的就职演说中，黄晓庆提到，“我们要把华科大变成中国的斯坦福”。这一愿景，与刘玉老师的想法不谋而合。而这一愿景，也仰仗于所有Dian团队队员团结协作，夺命狂奔，以不负“有组织的优秀学生联合在一起创新”。战略战术上，黄晓庆提了三点想法。一是成立人工智能交叉科学研究中心（The Cross Science Research Center Of Artificial Intelligence）。黄晓庆强调，“要尽快成立，抢占先机”。二是教育改革。黄晓庆列举了诸如清华施一公、姚期智等几个“标杆”式教改做法，以供考察借鉴。三是拥抱互联网。要借助互联网的力量，邀请世界级的大师网上授课。此次主旨演讲，Dian团队现任队长严子怡在问答环节中第一个向黄晓庆发问：在工程应用领域有着多年积淀的Dian团队，在人工智能时代下如何寻求新的发展之路？黄晓庆表示，如果对深度学习很了解，可以解决很多很重要的问题。他可以为团队提供平台、传感器，甚至机器人。刘玉老师则勉励队员们，应加强自身学习，以应对机会与挑战。 诸葛孔明曾作《出师表》，言“然侍卫之臣不懈于内，忠志之士忘身于外者”。拳拳赤子心，莫如黄晓庆——黄晓庆在接受媒体采访时曾说过：“我2006年决定回国加入中国移动，我很多好朋友说你疯了，凭我对你的了解，你在体制内绝对混不过6个月，要不你被炒鱿鱼，要不你受不了走了，他说你是个自由主义者，独立思考者，又不会拍马屁。可在任何时候，我相信一点：诚心会感动人。我在中国移动，很多人就很包容我，他们说这小子不是瞎忽悠的，他放弃了国外的高薪回来了，每天干这个事儿，每天干到11点，他不是在那里花天酒地，他不是在瞎胡闹。”现如今，黄晓庆以”分身之术“回到母校，“希望在我领导的电信学院之下，所有同仁由我带头，成为我们华中科技大学深化教育改革的急先锋”，此番气魄，尤若要在迷航中向最亮处摸索，在星际中留下浓墨重彩的一道轨迹。此等胸怀，“中国梦”与“奇点梦”交相辉映，是为民族长河中又一波浪潮中的一朵热烈的浪花。而这浪花，由汗水结成——仅此次十月中旬来校，黄晓庆每日刺促不休，会领导见教授，寻经验谈发展。“实干兴邦”，盒饭也香——为了能在有限的时间内更快地进入院长的工作状态，黄晓庆干脆在工作之中就地吃盒饭，十足的创业者姿态！ “一个团队的格局是领军的格局决定的，一个团队的高度是领军的高度决定的”。而这位创业者新主帅，又将带领深耕创新创业的Dian团队，步入怎样的时代？我们期待着。]]></content>
       <categories>
-        <category>快速入门快速实践</category>
-        <category>一天</category>
-        <category>常用</category>
+        <category>杂文</category>
       </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[一天：Kafka入门与项目实战]]></title>
@@ -28,6 +23,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Git超简明指南与超常用命令]]></title>
+    <url>%2FGit%E8%B6%85%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97%E4%B8%8E%E8%B6%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</url>
+    <content type="text"><![CDATA[git fetch origin branchname:branchname 可以把远程某各分支拉去到本地的branchname下，如果没有branchname，则会在本地新建branchname git checkout origin/remoteName -b localName 获取远程分支remoteName 到本地新分支localName，并跳到localName分支 git push -u origin local_branch_name git push origin –delete scp username@servername:/path/filename /tmp/local_destination]]></content>
+      <categories>
+        <category>快速入门快速实践</category>
+        <category>一天</category>
+        <category>常用</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[RussellCloud实习面经与入职经历]]></title>
     <url>%2FRussellCloud%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E4%B8%8E%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86.html</url>
     <content type="text"></content>
@@ -40,17 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[非死不可]]></title>
-    <url>%2FQ10.html</url>
-    <content type="text"><![CDATA[非死不可 一 那天任何从工厂的流水线上下来，工作服一脱就去了工厂外面的一家网吧。收银台网管年轻稚嫩的脸，盯着任何掏出的身份证上那张同样年轻稚嫩的脸，看了许久许久，嘴里叼的香烟都要燃到牙齿上了。 “有这么好看？快点，我队友还等着我呢。”任何的眼睛说不上大，可是凌厉。说话一急促的时候，淘气的几缕发丝就飘进了唇红齿白间。 网管愣过神来，把身份证递还给了任何。 任何接过身份证立马揣进兜里，四下探望，人声鼎沸，烟雾缭绕。任何随便找了一台电脑开始上网，和素未谋面的游戏情侣一起厮杀。任何一直眉头紧锁，第三把还没开始就关了游戏。然后她漫无目的地浏览起了门户网站。 也不知道看了多少明星八卦再加多少搞笑段子，任何握鼠标的右手，再也没有那么勤奋地点点点滑滑滑了；任何那两弯好看的眉毛下面毛细血管突出的眼睛，眼白挤开了瞳孔。 坐在她旁边的同样是一群稚气未脱的少年，他们头发染成各式奇特的颜色，敲键盘的手上一定有一枚不知是钻石还是玻璃还是塑料的戒指，以及一支刚好燃掉一半的香烟。 任何斜眼看过去，他们手指下键盘的缝隙里，刚刚跌落的圆柱形的烟灰一瞬间就损失了形状，再也撑不起一根香烟的直挺，流露出其内心的空虚。 二 任何恢复意识的时候，一睁眼看到的不再是厂房宿舍上铺的床板，而是白得一清二楚的天花板。 穿着白大褂的人走过来，而不是穿着蓝色工作服的主管。白大褂把任何的眼皮拨弄来拨弄去，用笔记下了什么就转身离开。 任何知道自己在医院。可是想不起来自己为什么会在医院。所能回忆起的最近的场景，就是那根香烟，那根香烟，对，网管嘴里的那根，和坐在旁边上网的少年手指夹住的那根。 应该是那根香烟点燃了整个网吧，嗯，低头就能看到满地凌乱的布线，抬头就能看见墙沿裸露的电线，不发生火灾就奇怪了。任何不由得要咧开嘴笑，大概就是在一年前，坐在她前面的那个男同学，给她讲火线零线和变压器，讲得眉飞色舞，任何一句也没听进去。她只是傻傻地看着他讲，不时跟着他的手势看看纸上排列整齐的线路。那种整齐感，是任何在一片废墟般的家里无法奢望的。 后来看到图片上整齐划一的工厂流水线，任何跟回家探亲的表姐说，“嗯，带我去这里吧。” 任何忽然感到嘴角强烈的撕裂感。疼，但不钻心，因为一口气就呼出去了那些不可述说的疼痛。 三 后来的情节发展出乎任何的意料，也出乎任何的理解。 任何醒来第二天，就有两个警察跑来问话，问些稀奇古怪的话，任何只能一问三不知。 警察无可奈何，结束了毫无“营养”的问话，义正言辞道：“在这件事上希望你不要有任何隐瞒，坦白从宽抗拒从严。” 任何陡地怒了，“你以为我在隐瞒什么！？” 两个穿制服的面不改色耳语一番，稍年轻的那个咳嗽了两声，带着明显的装腔说道： “十九条人命可不是什么小事，所有知情不报都是隐瞒，会酿成特别严重的后果，请你务必——嗯哼——知无不言，言无不尽。” 任何差点没晕过去。敢情警察怀疑她背负了十九条人命？ 很想解释的时候，发现自己只能只会说一句我不知道，任何知道，任何不知道。 任何第一时间想起来自己在宿舍床边的桌子上写了半封信，那是在她发现男朋友劈腿后又在存款个位数的情况下被扣一个月补贴的当头，胡乱发了一通牢骚。不消说，任何在信中提到想杀人。 任何的信，没有写收信人，但是任何心中有一个默认的收信人。当然不是她那负心的男朋友，而是那个给她讲火线零线和变压器的男同学。 大概任何永远也不会理解，是那个男同学，给她完成了这个堪称“伟大”的心愿： 这个月真惨，糟透了，没一件好事情。过几天就十九岁生日了，我就这么活 了十九年，还没交够十九个男朋友。当我死的那一天，总该有十九个十九岁的男 孩子陪我才好。贾史久三个字一共十八笔，他也就刚好活了十八笔。我能活到今 天，不晓得是运气还是霉气呢。 四 贾史久他爸叫贾历长，不过贾历长的生命历史着实不长，十九岁不到就一命呜呼。贾历长倒不是因体弱多病罹患绝症而死，而是死在了坦克底下。贾史久知道他爸小时候老喜欢坦克了，所以觉得他爸能在最青春的年纪死于所爱，实乃是一种伟大。何况，贾史久他老妈当年十几岁挺个大肚子做了未嫁的寡妇，更是显出了贾历长的英雄气概。 虽说贾史久从小没见过亲爸爸，但是后爸陆陆续续好几个，待他也好，逆来顺受，好吃好喝好玩招待。贾史久也给他妈争气，从小就是各种第一专业户。 贾史久十三岁那年，有好事的邻居问他是不是他妈和中科院某科学家生的野种，要不咋这么聪明呢。贾史久没吭声。 当晚半夜贾史久爬到邻居家，对供电线路做了点手脚，然后一身轻松爬回家一觉睡到天亮。第二天晌午的时候传来噩耗，邻居一家三口死于触电。 这出乎贾史久的预料。本来只想教训一下那个满口跑野种的女家长的，不料买一送二。贾史久后来听说，女家长在厨房触电后男主人和小孩都跑过去扶人，所以全家跑阴曹地府一起吃午饭了。 是他们愚蠢。贾史久这样想着，心中负罪感也就慢慢释然了。 不过贾史久心中还是有些疙瘩，想要搬家，正好母亲改嫁，也就离开了这个时刻提醒着他血债的地方。搬家伴随着转学，也就是这年秋天，他作为插班生，认识了任何。 五]]></content>
-      <categories>
-        <category>交流园地</category>
-      </categories>
-      <tags>
-        <tag>小说</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[让神哭泣-评《The Interview》]]></title>
     <url>%2F%E8%AE%A9%E7%A5%9E%E5%93%AD%E6%B3%A3-%E8%AF%84%E3%80%8AThe%20Interview%E3%80%8B.html</url>
     <content type="text"><![CDATA[PHP是世界上最好的语言电影资源下载百度网盘]]></content>
@@ -59,6 +56,17 @@
       </categories>
       <tags>
         <tag>影评</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[非死不可]]></title>
+    <url>%2FQ10.html</url>
+    <content type="text"><![CDATA[非死不可 一 那天任何从工厂的流水线上下来，工作服一脱就去了工厂外面的一家网吧。收银台网管年轻稚嫩的脸，盯着任何掏出的身份证上那张同样年轻稚嫩的脸，看了许久许久，嘴里叼的香烟都要燃到牙齿上了。 “有这么好看？快点，我队友还等着我呢。”任何的眼睛说不上大，可是凌厉。说话一急促的时候，淘气的几缕发丝就飘进了唇红齿白间。 网管愣过神来，把身份证递还给了任何。 任何接过身份证立马揣进兜里，四下探望，人声鼎沸，烟雾缭绕。任何随便找了一台电脑开始上网，和素未谋面的游戏情侣一起厮杀。任何一直眉头紧锁，第三把还没开始就关了游戏。然后她漫无目的地浏览起了门户网站。 也不知道看了多少明星八卦再加多少搞笑段子，任何握鼠标的右手，再也没有那么勤奋地点点点滑滑滑了；任何那两弯好看的眉毛下面毛细血管突出的眼睛，眼白挤开了瞳孔。 坐在她旁边的同样是一群稚气未脱的少年，他们头发染成各式奇特的颜色，敲键盘的手上一定有一枚不知是钻石还是玻璃还是塑料的戒指，以及一支刚好燃掉一半的香烟。 任何斜眼看过去，他们手指下键盘的缝隙里，刚刚跌落的圆柱形的烟灰一瞬间就损失了形状，再也撑不起一根香烟的直挺，流露出其内心的空虚。 二 任何恢复意识的时候，一睁眼看到的不再是厂房宿舍上铺的床板，而是白得一清二楚的天花板。 穿着白大褂的人走过来，而不是穿着蓝色工作服的主管。白大褂把任何的眼皮拨弄来拨弄去，用笔记下了什么就转身离开。 任何知道自己在医院。可是想不起来自己为什么会在医院。所能回忆起的最近的场景，就是那根香烟，那根香烟，对，网管嘴里的那根，和坐在旁边上网的少年手指夹住的那根。 应该是那根香烟点燃了整个网吧，嗯，低头就能看到满地凌乱的布线，抬头就能看见墙沿裸露的电线，不发生火灾就奇怪了。任何不由得要咧开嘴笑，大概就是在一年前，坐在她前面的那个男同学，给她讲火线零线和变压器，讲得眉飞色舞，任何一句也没听进去。她只是傻傻地看着他讲，不时跟着他的手势看看纸上排列整齐的线路。那种整齐感，是任何在一片废墟般的家里无法奢望的。 后来看到图片上整齐划一的工厂流水线，任何跟回家探亲的表姐说，“嗯，带我去这里吧。” 任何忽然感到嘴角强烈的撕裂感。疼，但不钻心，因为一口气就呼出去了那些不可述说的疼痛。 三 后来的情节发展出乎任何的意料，也出乎任何的理解。 任何醒来第二天，就有两个警察跑来问话，问些稀奇古怪的话，任何只能一问三不知。 警察无可奈何，结束了毫无“营养”的问话，义正言辞道：“在这件事上希望你不要有任何隐瞒，坦白从宽抗拒从严。” 任何陡地怒了，“你以为我在隐瞒什么！？” 两个穿制服的面不改色耳语一番，稍年轻的那个咳嗽了两声，带着明显的装腔说道： “十九条人命可不是什么小事，所有知情不报都是隐瞒，会酿成特别严重的后果，请你务必——嗯哼——知无不言，言无不尽。” 任何差点没晕过去。敢情警察怀疑她背负了十九条人命？ 很想解释的时候，发现自己只能只会说一句我不知道，任何知道，任何不知道。 任何第一时间想起来自己在宿舍床边的桌子上写了半封信，那是在她发现男朋友劈腿后又在存款个位数的情况下被扣一个月补贴的当头，胡乱发了一通牢骚。不消说，任何在信中提到想杀人。 任何的信，没有写收信人，但是任何心中有一个默认的收信人。当然不是她那负心的男朋友，而是那个给她讲火线零线和变压器的男同学。 大概任何永远也不会理解，是那个男同学，给她完成了这个堪称“伟大”的心愿： 这个月真惨，糟透了，没一件好事情。过几天就十九岁生日了，我就这么活 了十九年，还没交够十九个男朋友。当我死的那一天，总该有十九个十九岁的男 孩子陪我才好。贾史久三个字一共十八笔，他也就刚好活了十八笔。我能活到今 天，不晓得是运气还是霉气呢。 四 贾史久他爸叫贾历长，不过贾历长的生命历史着实不长，十九岁不到就一命呜呼。贾历长倒不是因体弱多病罹患绝症而死，而是死在了坦克底下。贾史久知道他爸小时候老喜欢坦克了，所以觉得他爸能在最青春的年纪死于所爱，实乃是一种伟大。何况，贾史久他老妈当年十几岁挺个大肚子做了未嫁的寡妇，更是显出了贾历长的英雄气概。 虽说贾史久从小没见过亲爸爸，但是后爸陆陆续续好几个，待他也好，逆来顺受，好吃好喝好玩招待。贾史久也给他妈争气，从小就是各种第一专业户。 贾史久十三岁那年，有好事的邻居问他是不是他妈和中科院某科学家生的野种，要不咋这么聪明呢。贾史久没吭声。 当晚半夜贾史久爬到邻居家，对供电线路做了点手脚，然后一身轻松爬回家一觉睡到天亮。第二天晌午的时候传来噩耗，邻居一家三口死于触电。 这出乎贾史久的预料。本来只想教训一下那个满口跑野种的女家长的，不料买一送二。贾史久后来听说，女家长在厨房触电后男主人和小孩都跑过去扶人，所以全家跑阴曹地府一起吃午饭了。 是他们愚蠢。贾史久这样想着，心中负罪感也就慢慢释然了。 不过贾史久心中还是有些疙瘩，想要搬家，正好母亲改嫁，也就离开了这个时刻提醒着他血债的地方。搬家伴随着转学，也就是这年秋天，他作为插班生，认识了任何。 五]]></content>
+      <categories>
+        <category>交流园地</category>
+      </categories>
+      <tags>
+        <tag>小说</tag>
       </tags>
   </entry>
   <entry>
@@ -107,9 +115,9 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[WebQQ与聊天机器人的技术细节]]></title>
-    <url>%2FWebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html</url>
-    <content type="text"><![CDATA[登录模块class Login(HttpClient) 类初始化1234567891011121314151617181920212223242526272829303132333435def __init__(self, vpath,qq_number=0,params=None): self.initTime = time.time() self.VPath = vpath # QRCode保存路径 self.UI_PTLOGIN2_URL = params.get('UI_PTLOGIN2_URL', '') self.QQ_LOGIN_URL = params.get('QQ_LOGIN_URL') self.ClientID = params.get('ClinetID') self.PSessionID = params.get('PSessionID') self.QQ_GROUP_API_URL = params.get('QQ_GROUP_API_URL') self.REFERER = params.get('REFERER') self.MaxTryTime = params.get('MaxTryTime',5) AdminQQ = int(qq_number) # 1. 从 'http://w.qq.com/' get # 2. 从 UI_PTLOGIN2_URL = 'https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001' 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?) # 3. 从login_html中获取mibao_css # 4. 开始时间 datetime.datetime.utcnow() ==》 millis # 5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = 'https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken=&#123;0&#125;&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid=&#123;1&#125;&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-&#123;2&#125;&amp;mibao_css=&#123;3&#125;&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver=&#123;4&#125;&amp;login_sig=&#123;5&#125;&amp;pt_randsalt=2' 登录，得到get的response，检查是否扫码（登录） # `login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)` # 6. 扫码后删除二维码图片 # 7. 记录登录账号的昵称 # 8. 从cookie中得到PTWebQQ # 9. 先后post,get两个url，验证是否登录成功。 # 10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID # 11. 随机生成msgId，]]></content>
+    <title><![CDATA[WebQQ与聊天机器人的玩法]]></title>
+    <url>%2FWebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html</url>
+    <content type="text"><![CDATA[QQ小黄鸡VPS挂机版 该项目修改自SmartQQBOT这一项目，支持在VPS下nohup命令挂机。QQ协议说明请参考原项目。 请帮忙分析Android QQ协议：此项目现已稳定，在更新协议前不会有大更新。希望有人能跟我一起搞手机QQ协议，SmartQQ协议稳定性不是很理想。 重要：群聊被TX认为是极度危险的行为，因此如果账号被怀疑被盗号（异地登陆），群聊消息会发不出去。表现为程序能收到群聊消息，群聊消息发送返回值为发送成功，但其他群成员无法看到您发出的消息。大约登陆10分钟后您会收到QQ提醒提示账号被盗，要求改密码，同时账号被临时冻结。不知为何该程序刚运行时总是被怀疑异地登陆，当您重复解冻3次后（就是改密码），TX基本就不再怀疑您了，一般一次能稳定挂机2-3天。强烈推荐您用小号挂QQ小黄鸡！ This project is a chatting robot in QQ, implemented in Python. The robot uses Artificial Intelligent API to generate response. QQ is a popular instant chatting service in China, which is similar to Facebook Messenger. The robot supports group chatting and private chatting and should be only used for fun. Here is a similar project used to keep QQ account online with the function to record messages and forward to your E-mail. 登陆时采用QQ安全中心的二维码做为登陆条件, 不需要在程序里输入QQ号码及QQ密码。QQ自动回复私聊（无群聊功能）及留言邮件提醒版本请看这里。 如何使用从http://www.tuling123.com/openapi/ 申请一个API KEY(免费，5000次/天)， 贴到QQBot.py的第36行 (测试KEY：c7c5abbc9ec9cad3a63bde71d17e3c2c)修改groupfollow.txt,将需要小黄鸡回复的群的群名写入(小黄鸡必须为群成员),每行一个群名，请不要打多余的空格。（新版WEBQQ已移除获取群号的接口，输入中文群名请务必使用UTF-8编码）nohup python2 QQBot.py &gt;qbot.log&amp;ls若出现v.png则用QQ安全中心扫描，否则继续lscat log.log可以输出运行LOG强烈建议使用小号挂小黄鸡，已知QQ会临时封禁机器人的临时对话回复和群回复，原理未知，每次封禁约为10分钟。表现为发送消息返回值retcode 为 0 但其他人无法看到。长时间挂机会导致QQ被冻结错误，QQ安全中心提示发布不良信息据反馈此AI平台回复中带有少量广告。。。(如问iphone6价格回复小米799)功能 注：以下命令皆是在QQ中发送，群聊命令发送到所在群中 关于及帮助，在群聊中发送!about 群聊智能回复，在群中通过发送!ai 问题语句，则机器人向AI平台请求问题的回复并回复到群，带有!ai关键字时优先触发此功能 私聊智能回复，对于收到的私聊，机器人向AI平台请求该聊天记录的回复并回复给消息发送者 群聊学习功能，类似于小黄鸡，在群中通过发送!learn {ha}{哈哈}语句，则机器人检测到发言中包含“ha”时将自动回复“哈哈”。!delete {ha}{哈哈}可以删除该内容。学习内容会自动储存在database.群号.save文件。!deleteall可删除该群所有记录。注意learn和{之间有空格，{}与{}之间没有。 群聊复读功能，检测到群聊中连续两个回复内容相同，将自动复读该内容1次。 群聊关注功能，使用命令!follow {QQ昵称}!可以使机器人复读此人所有发言（除命令外）使用命令!unfollow {QQ昵称}!解除关注。例如 !follow 卖火柴的小女孩!。{QQ昵称}处可使用”me”来快速关注与解除关注自己，例：!follow me! 私聊直接聊天即可，不需要加任何前缀。 Refshttps://github.com/b3log/xiaov https://github.com/ScienJus/smartqq/wiki/%E7%99%BB%E5%BD%95-Api http://www.scienjus.com/webqq-analysis-2/]]></content>
       <categories>
         <category>好玩</category>
       </categories>
@@ -121,9 +129,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[WebQQ与聊天机器人的玩法]]></title>
-    <url>%2FWebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html</url>
-    <content type="text"><![CDATA[QQ小黄鸡VPS挂机版 该项目修改自SmartQQBOT这一项目，支持在VPS下nohup命令挂机。QQ协议说明请参考原项目。 请帮忙分析Android QQ协议：此项目现已稳定，在更新协议前不会有大更新。希望有人能跟我一起搞手机QQ协议，SmartQQ协议稳定性不是很理想。 重要：群聊被TX认为是极度危险的行为，因此如果账号被怀疑被盗号（异地登陆），群聊消息会发不出去。表现为程序能收到群聊消息，群聊消息发送返回值为发送成功，但其他群成员无法看到您发出的消息。大约登陆10分钟后您会收到QQ提醒提示账号被盗，要求改密码，同时账号被临时冻结。不知为何该程序刚运行时总是被怀疑异地登陆，当您重复解冻3次后（就是改密码），TX基本就不再怀疑您了，一般一次能稳定挂机2-3天。强烈推荐您用小号挂QQ小黄鸡！ This project is a chatting robot in QQ, implemented in Python. The robot uses Artificial Intelligent API to generate response. QQ is a popular instant chatting service in China, which is similar to Facebook Messenger. The robot supports group chatting and private chatting and should be only used for fun. Here is a similar project used to keep QQ account online with the function to record messages and forward to your E-mail. 登陆时采用QQ安全中心的二维码做为登陆条件, 不需要在程序里输入QQ号码及QQ密码。QQ自动回复私聊（无群聊功能）及留言邮件提醒版本请看这里。 如何使用从http://www.tuling123.com/openapi/ 申请一个API KEY(免费，5000次/天)， 贴到QQBot.py的第36行 (测试KEY：c7c5abbc9ec9cad3a63bde71d17e3c2c)修改groupfollow.txt,将需要小黄鸡回复的群的群名写入(小黄鸡必须为群成员),每行一个群名，请不要打多余的空格。（新版WEBQQ已移除获取群号的接口，输入中文群名请务必使用UTF-8编码）nohup python2 QQBot.py &gt;qbot.log&amp;ls若出现v.png则用QQ安全中心扫描，否则继续lscat log.log可以输出运行LOG强烈建议使用小号挂小黄鸡，已知QQ会临时封禁机器人的临时对话回复和群回复，原理未知，每次封禁约为10分钟。表现为发送消息返回值retcode 为 0 但其他人无法看到。长时间挂机会导致QQ被冻结错误，QQ安全中心提示发布不良信息据反馈此AI平台回复中带有少量广告。。。(如问iphone6价格回复小米799)功能 注：以下命令皆是在QQ中发送，群聊命令发送到所在群中 关于及帮助，在群聊中发送!about 群聊智能回复，在群中通过发送!ai 问题语句，则机器人向AI平台请求问题的回复并回复到群，带有!ai关键字时优先触发此功能 私聊智能回复，对于收到的私聊，机器人向AI平台请求该聊天记录的回复并回复给消息发送者 群聊学习功能，类似于小黄鸡，在群中通过发送!learn {ha}{哈哈}语句，则机器人检测到发言中包含“ha”时将自动回复“哈哈”。!delete {ha}{哈哈}可以删除该内容。学习内容会自动储存在database.群号.save文件。!deleteall可删除该群所有记录。注意learn和{之间有空格，{}与{}之间没有。 群聊复读功能，检测到群聊中连续两个回复内容相同，将自动复读该内容1次。 群聊关注功能，使用命令!follow {QQ昵称}!可以使机器人复读此人所有发言（除命令外）使用命令!unfollow {QQ昵称}!解除关注。例如 !follow 卖火柴的小女孩!。{QQ昵称}处可使用”me”来快速关注与解除关注自己，例：!follow me! 私聊直接聊天即可，不需要加任何前缀。 Refshttps://github.com/b3log/xiaov https://github.com/ScienJus/smartqq/wiki/%E7%99%BB%E5%BD%95-Api http://www.scienjus.com/webqq-analysis-2/]]></content>
+    <title><![CDATA[WebQQ与聊天机器人的技术细节]]></title>
+    <url>%2FWebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html</url>
+    <content type="text"><![CDATA[登录模块class Login(HttpClient) 类初始化1234567891011121314151617181920212223242526272829303132333435def __init__(self, vpath,qq_number=0,params=None): self.initTime = time.time() self.VPath = vpath # QRCode保存路径 self.UI_PTLOGIN2_URL = params.get('UI_PTLOGIN2_URL', '') self.QQ_LOGIN_URL = params.get('QQ_LOGIN_URL') self.ClientID = params.get('ClinetID') self.PSessionID = params.get('PSessionID') self.QQ_GROUP_API_URL = params.get('QQ_GROUP_API_URL') self.REFERER = params.get('REFERER') self.MaxTryTime = params.get('MaxTryTime',5) AdminQQ = int(qq_number) # 1. 从 'http://w.qq.com/' get # 2. 从 UI_PTLOGIN2_URL = 'https://ui.ptlogin2.qq.com/cgi-bin/login?daid=164&amp;target=self&amp;style=16&amp;mibao_css=m_webqq&amp;appid=501004106&amp;enable_qlogin=0&amp;no_verifyimg=1&amp;s_url=http%3A%2F%2Fw.own_qq_number.com%2Fproxy.html&amp;f_url=loginerroralert&amp;strong_login=1&amp;login_state=10&amp;t=20131024001' 获取登录页面（以w.qq.com为Referer头部）， 从login_html中获取APPID,SIGN（登录证书),JS_VERSION,MiBaoCss(?) # 3. 从login_html中获取mibao_css # 4. 开始时间 datetime.datetime.utcnow() ==》 millis # 5. 尝试MaxTryTime次：下载登录验证二维码，获取cookie，从QQ_LOGIN_URL = 'https://ssl.ptlogin2.qq.com/ptqrlogin?ptqrtoken=&#123;0&#125;&amp;webqq_type=10&amp;remember_uin=1&amp;login2qq=1&amp;aid=&#123;1&#125;&amp;u1=http%3A%2F%2Fw.qq.com%2Fproxy.html%3Flogin2qq%3D1%26webqq_type%3D10&amp;ptredirect=0&amp;ptlang=2052&amp;daid=164&amp;from_ui=1&amp;pttype=1&amp;dumy=&amp;fp=loginerroralert&amp;action=0-0-&#123;2&#125;&amp;mibao_css=&#123;3&#125;&amp;t=1&amp;g=1&amp;js_type=0&amp;js_ver=&#123;4&#125;&amp;login_sig=&#123;5&#125;&amp;pt_randsalt=2' 登录，得到get的response，检查是否扫码（登录） # `login_html = self.Get((self.QQ_LOGIN_URL).format(util.getQRtoken(QRSig), APPID, util.date_to_millis(datetime.datetime.utcnow()) - StarTime, MiBaoCss, JS_VERSION, SIGN),Refer=self.UI_PTLOGIN2_URL)` # 6. 扫码后删除二维码图片 # 7. 记录登录账号的昵称 # 8. 从cookie中得到PTWebQQ # 9. 先后post,get两个url，验证是否登录成功。 # 10. 从response中获取VFWebQQ，MyUIN，并更新self.PSessionID # 11. 随机生成msgId，]]></content>
       <categories>
         <category>好玩</category>
       </categories>

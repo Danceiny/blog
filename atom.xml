@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.cannot.cc/"/>
-  <updated>2017-08-25T10:51:39.406Z</updated>
+  <updated>2017-10-15T17:42:16.663Z</updated>
   <id>http://blog.cannot.cc/</id>
   
   <author>
@@ -16,28 +16,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git超简明指南与超常用命令</title>
-    <link href="http://blog.cannot.cc/Git%E8%B6%85%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97%E4%B8%8E%E8%B6%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
-    <id>http://blog.cannot.cc/Git超简明指南与超常用命令.html</id>
-    <published>2017-08-25T10:49:30.000Z</published>
-    <updated>2017-08-25T10:51:39.406Z</updated>
+    <title>中国移动研究院老掌门效力华科大，Dian团队步入新主帅黄晓庆时代</title>
+    <link href="http://blog.cannot.cc/%E9%BB%84%E6%99%93%E5%BA%86.html"/>
+    <id>http://blog.cannot.cc/黄晓庆.html</id>
+    <published>2017-10-15T17:41:16.000Z</published>
+    <updated>2017-10-15T17:42:16.663Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;git fetch origin branchname:branchname&lt;/p&gt;
-&lt;p&gt;可以把远程某各分支拉去到本地的branchname下，如果没有branchname，则会在本地新建branchname&lt;/p&gt;
-&lt;p&gt;git checkout origin/remo
+      &lt;p&gt;编者按：黄晓庆，Dian团队导师，达闼科技创始人兼CEO，前中国移动研究院院长，“千人计划”国家特聘专家。1982年毕业于华中科技大学电信系。2017年8月，就任华中科技大学电子信息与通信学院院长。&lt;/p&gt;
+&lt;p&gt;“人类最重要的使命，就是摆脱太阳系的束缚。”作为星际迷航的铁
     
     </summary>
     
-      <category term="快速入门快速实践" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/"/>
+      <category term="杂文" scheme="http://blog.cannot.cc/categories/%E6%9D%82%E6%96%87/"/>
     
-      <category term="一天" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/%E4%B8%80%E5%A4%A9/"/>
-    
-      <category term="常用" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/%E4%B8%80%E5%A4%A9/%E5%B8%B8%E7%94%A8/"/>
-    
-    
-      <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
     
   </entry>
   
@@ -71,6 +64,32 @@
   </entry>
   
   <entry>
+    <title>Git超简明指南与超常用命令</title>
+    <link href="http://blog.cannot.cc/Git%E8%B6%85%E7%AE%80%E6%98%8E%E6%8C%87%E5%8D%97%E4%B8%8E%E8%B6%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>http://blog.cannot.cc/Git超简明指南与超常用命令.html</id>
+    <published>2017-08-25T10:49:30.000Z</published>
+    <updated>2017-08-25T10:51:39.406Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;git fetch origin branchname:branchname&lt;/p&gt;
+&lt;p&gt;可以把远程某各分支拉去到本地的branchname下，如果没有branchname，则会在本地新建branchname&lt;/p&gt;
+&lt;p&gt;git checkout origin/remo
+    
+    </summary>
+    
+      <category term="快速入门快速实践" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/"/>
+    
+      <category term="一天" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/%E4%B8%80%E5%A4%A9/"/>
+    
+      <category term="常用" scheme="http://blog.cannot.cc/categories/%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E5%BF%AB%E9%80%9F%E5%AE%9E%E8%B7%B5/%E4%B8%80%E5%A4%A9/%E5%B8%B8%E7%94%A8/"/>
+    
+    
+      <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>RussellCloud实习面经与入职经历</title>
     <link href="http://blog.cannot.cc/RussellCloud%E5%AE%9E%E4%B9%A0%E9%9D%A2%E7%BB%8F%E4%B8%8E%E5%85%A5%E8%81%8C%E7%BB%8F%E5%8E%86.html"/>
     <id>http://blog.cannot.cc/RussellCloud实习面经与入职经历.html</id>
@@ -87,6 +106,26 @@
       <category term="Python" scheme="http://blog.cannot.cc/tags/Python/"/>
     
       <category term="面经" scheme="http://blog.cannot.cc/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让神哭泣-评《The Interview》</title>
+    <link href="http://blog.cannot.cc/%E8%AE%A9%E7%A5%9E%E5%93%AD%E6%B3%A3-%E8%AF%84%E3%80%8AThe%20Interview%E3%80%8B.html"/>
+    <id>http://blog.cannot.cc/让神哭泣-评《The Interview》.html</id>
+    <published>2017-08-17T02:52:55.000Z</published>
+    <updated>2017-08-17T02:59:02.611Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;PHP是世界上最好的语言&quot;&gt;&lt;a href=&quot;#PHP是世界上最好的语言&quot; class=&quot;headerlink&quot; title=&quot;PHP是世界上最好的语言&quot;&gt;&lt;/a&gt;PHP是世界上最好的语言&lt;/h1&gt;&lt;h1 id=&quot;电影资源下载&quot;&gt;&lt;a href=&quot;#电影资源下载&quot;
+    
+    </summary>
+    
+      <category term="交流园地" scheme="http://blog.cannot.cc/categories/%E4%BA%A4%E6%B5%81%E5%9B%AD%E5%9C%B0/"/>
+    
+    
+      <category term="影评" scheme="http://blog.cannot.cc/tags/%E5%BD%B1%E8%AF%84/"/>
     
   </entry>
   
@@ -108,26 +147,6 @@
     
     
       <category term="小说" scheme="http://blog.cannot.cc/tags/%E5%B0%8F%E8%AF%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>让神哭泣-评《The Interview》</title>
-    <link href="http://blog.cannot.cc/%E8%AE%A9%E7%A5%9E%E5%93%AD%E6%B3%A3-%E8%AF%84%E3%80%8AThe%20Interview%E3%80%8B.html"/>
-    <id>http://blog.cannot.cc/让神哭泣-评《The Interview》.html</id>
-    <published>2017-08-17T02:52:55.000Z</published>
-    <updated>2017-08-17T02:59:02.611Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;PHP是世界上最好的语言&quot;&gt;&lt;a href=&quot;#PHP是世界上最好的语言&quot; class=&quot;headerlink&quot; title=&quot;PHP是世界上最好的语言&quot;&gt;&lt;/a&gt;PHP是世界上最好的语言&lt;/h1&gt;&lt;h1 id=&quot;电影资源下载&quot;&gt;&lt;a href=&quot;#电影资源下载&quot;
-    
-    </summary>
-    
-      <category term="交流园地" scheme="http://blog.cannot.cc/categories/%E4%BA%A4%E6%B5%81%E5%9B%AD%E5%9C%B0/"/>
-    
-    
-      <category term="影评" scheme="http://blog.cannot.cc/tags/%E5%BD%B1%E8%AF%84/"/>
     
   </entry>
   
@@ -241,17 +260,15 @@
   </entry>
   
   <entry>
-    <title>WebQQ与聊天机器人的技术细节</title>
-    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html"/>
-    <id>http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html</id>
+    <title>WebQQ与聊天机器人的玩法</title>
+    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html"/>
+    <id>http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html</id>
     <published>2017-06-06T15:06:19.000Z</published>
-    <updated>2017-08-17T02:54:14.552Z</updated>
+    <updated>2017-06-08T19:01:02.869Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;登录模块&quot;&gt;&lt;a href=&quot;#登录模块&quot; class=&quot;headerlink&quot; title=&quot;登录模块&quot;&gt;&lt;/a&gt;登录模块&lt;/h1&gt;&lt;p&gt;&lt;code&gt;class Login(HttpClient)&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;类初始化&lt;figure 
+      &lt;h1 id=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;a href=&quot;#QQ小黄鸡VPS挂机版&quot; class=&quot;headerlink&quot; title=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;/a&gt;QQ小黄鸡VPS挂机版&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/zer
     
     </summary>
     
@@ -269,15 +286,17 @@
   </entry>
   
   <entry>
-    <title>WebQQ与聊天机器人的玩法</title>
-    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E7%8E%A9%E6%B3%95.html"/>
-    <id>http://blog.cannot.cc/WebQQ与聊天机器人的玩法.html</id>
+    <title>WebQQ与聊天机器人的技术细节</title>
+    <link href="http://blog.cannot.cc/WebQQ%E4%B8%8E%E8%81%8A%E5%A4%A9%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82.html"/>
+    <id>http://blog.cannot.cc/WebQQ与聊天机器人的技术细节.html</id>
     <published>2017-06-06T15:06:19.000Z</published>
-    <updated>2017-06-08T19:01:02.869Z</updated>
+    <updated>2017-08-17T02:54:14.552Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;a href=&quot;#QQ小黄鸡VPS挂机版&quot; class=&quot;headerlink&quot; title=&quot;QQ小黄鸡VPS挂机版&quot;&gt;&lt;/a&gt;QQ小黄鸡VPS挂机版&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://travis-ci.org/zer
+      &lt;h1 id=&quot;登录模块&quot;&gt;&lt;a href=&quot;#登录模块&quot; class=&quot;headerlink&quot; title=&quot;登录模块&quot;&gt;&lt;/a&gt;登录模块&lt;/h1&gt;&lt;p&gt;&lt;code&gt;class Login(HttpClient)&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;类初始化&lt;figure 
     
     </summary>
     
@@ -405,29 +424,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;什么是程序，什么是代码，什么是语言，什么是编程&quot;&gt;&lt;a href=&quot;#什么是程序，什么是代码，什么是语言，什么是编程&quot; class=&quot;headerlink&quot; title=&quot;什么是程序，什么是代码，什么是语言，什么是编程&quot;&gt;&lt;/a&gt;什么是程序，什么是代码，什么是语言
-    
-    </summary>
-    
-      <category term="Language" scheme="http://blog.cannot.cc/categories/Language/"/>
-    
-    
-      <category term="C语言" scheme="http://blog.cannot.cc/tags/C%E8%AF%AD%E8%A8%80/"/>
-    
-      <category term="入门" scheme="http://blog.cannot.cc/tags/%E5%85%A5%E9%97%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C语言入门奇葩说-0</title>
-    <link href="http://blog.cannot.cc/C%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E5%A5%87%E8%91%A9%E8%AF%B4-0.html"/>
-    <id>http://blog.cannot.cc/C语言入门奇葩说-0.html</id>
-    <published>2016-03-08T15:43:00.000Z</published>
-    <updated>2017-05-07T10:13:29.362Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;About&quot;&gt;&lt;a href=&quot;#About&quot; class=&quot;headerlink&quot; title=&quot;About&quot;&gt;&lt;/a&gt;About&lt;/h1&gt;&lt;p&gt;！！！&lt;strong&gt;这个部分略过也没有大碍的。可以直接从关于读书开始看起。&lt;/strong&gt;！！！&lt;/p&gt;
-&lt;p&gt;
     
     </summary>
     
