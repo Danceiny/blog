@@ -494,7 +494,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  5,940
+                  5,339
                 </span>
               
 
@@ -510,7 +510,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  22
+                  20
                 </span>
               
             </div>
@@ -529,7 +529,7 @@
       
         
           
-            <h1 id="译文出处"><a href="#译文出处" class="headerlink" title="译文出处"></a>译文出处</h1><p><a href="http://docs.celeryproject.org/en/latest/faq.html" target="_blank" rel="external">http://docs.celeryproject.org/en/latest/faq.html</a></p>
+            <h2 id="译文出处"><a href="#译文出处" class="headerlink" title="译文出处"></a>译文出处</h2><p><a href="http://docs.celeryproject.org/en/latest/faq.html" target="_blank" rel="external">http://docs.celeryproject.org/en/latest/faq.html</a></p>
 <p>This document describes the current stable version of Celery (4.1).</p>
 <p>本文长期更新地址： <a href="http://blog.cannot.cc/Celery_FAQ_4_1_Stable.html">Celery4.1常见问题</a></p>
 <p><strong>术语翻译对照</strong></p>
@@ -698,87 +698,6 @@
 <h3 id="django-celery-results创建的数据库表有什么目的？"><a href="#django-celery-results创建的数据库表有什么目的？" class="headerlink" title="django-celery-results创建的数据库表有什么目的？"></a>django-celery-results创建的数据库表有什么目的？</h3><p>Django的数据库结果后端扩展需要两个额外的数据模型：TaskResult and GroupResult.</p>
 <h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><h3 id="Celery支持Windows吗？"><a href="#Celery支持Windows吗？" class="headerlink" title="Celery支持Windows吗？"></a>Celery支持Windows吗？</h3><p>答案：不。4.x版本以上就不支持Windows了。</p>
 <h1 id="欢迎扫码加群交流"><a href="#欢迎扫码加群交流" class="headerlink" title="欢迎扫码加群交流"></a>欢迎扫码加群交流</h1><p><img src="http://opkk27k9n.bkt.clouddn.com/17-11-26/19293813.jpg" alt=""></p>
-<h4 id="常见问题目录"><a href="#常见问题目录" class="headerlink" title="常见问题目录"></a>常见问题目录</h4><ul>
-<li>常规<ul>
-<li>应该用Celery来处理什么样的事情？</li>
-</ul>
-</li>
-<li>一些误解<ul>
-<li>Celery真的有50000行代码吗？</li>
-<li>Celery有很多依赖吗？<ul>
-<li>celery</li>
-<li>kombu</li>
-</ul>
-</li>
-<li>Celery是heavy-weight，很重的吗？</li>
-<li>Celery依赖于pickle（序列化库）吗？</li>
-<li>Celery只支持Django吗？</li>
-<li>我必须使用AMQP/RabbitMQ吗？</li>
-<li>Celery是多语言的吗？</li>
-</ul>
-</li>
-<li>解决问题<ul>
-<li>MySQL抛出死锁错误，怎么办？</li>
-<li>worker什么都不做，hanging挂起了</li>
-<li>任务结果返回不可靠</li>
-<li>为什么<code>task.delay/apply*</code>这些调用之后worker只是挂起？</li>
-<li>兼容FreeBSD系统吗？</li>
-<li>遇到了完整性错误(IntegrityError)：Duplicate Key errors，什么原因？</li>
-<li>我的任务为什么没有被处理？</li>
-<li>我的任务为什么不会运行？</li>
-<li>我的定时任务为什么不会运行？</li>
-<li>我应该清理所有的等待中任务吗？</li>
-<li>我怎么清理所有的等待中任务？</li>
-<li>我清理了消息，但是队列中仍然有消息残留？</li>
-</ul>
-</li>
-<li>结果<ul>
-<li>如果我有一个id指向一个任务，怎么得到任务结果？</li>
-</ul>
-</li>
-<li>安全<ul>
-<li>使用pickle不是有安全隐患吗？</li>
-<li>message是否可以加密？</li>
-<li>以root用户运行worker是安全的吗？</li>
-</ul>
-</li>
-<li>Brokers<ul>
-<li>为什么RabbitMQ崩溃了？</li>
-<li>Celery可以和ActiveMQ/STOMP一起使用吗？</li>
-<li>不使用AMQP broker时，哪些特征不支持了？</li>
-</ul>
-</li>
-<li>Tasks<ul>
-<li>调用任务时如何复用连接？</li>
-<li>子进程中sudo反回了None</li>
-<li>为什么workers不能处理任务的时候还能将任务从队列中删除？</li>
-<li>我可以通过任务名称调用任务吗？</li>
-<li>我如何获得当前任务的id？</li>
-<li>我如何指定一个自定义的任务_id？</li>
-<li>任务上可以使用装饰器吗？</li>
-<li>我能使用自然数作为任务 ids吗？</li>
-<li>我能指定，一旦另一个任务结束，马上运行一个任务吗？</li>
-<li>我能取消任务的执行吗？</li>
-<li>为什么我的远程控制命令被所有的workers接收到了？</li>
-<li>我能发送一些任务到限定的一些服务器上吗？</li>
-<li>我能禁掉任务的预取prefetching吗？</li>
-<li>Celery支持任务优先级吗？</li>
-<li>我应该使用重试retry还是acks_late？</li>
-<li>我可以计划让任务在特定的时间执行吗？</li>
-<li>我可以安全地关闭worker吗？</li>
-<li>我可以在平台的后端运行worker吗？</li>
-</ul>
-</li>
-<li>Django<ul>
-<li>django-celery-beat创建的数据库表有什么目的？</li>
-<li>django-celery-results创建的数据库表有什么目的？</li>
-</ul>
-</li>
-<li>Windows<ul>
-<li>Celery支持Windows吗？</li>
-</ul>
-</li>
-</ul>
 
           
         
