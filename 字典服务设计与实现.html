@@ -471,7 +471,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  6
+                  659
                 </span>
               
 
@@ -487,7 +487,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -538,7 +538,6 @@
     });
     FB.AppEvents.logPageView();
   };
-
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
      if (d.getElementById(id)) {return;}
@@ -549,7 +548,27 @@
 </script>
 <!--facebook social share-->
 
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><h2 id="设计要求"><a href="#设计要求" class="headerlink" title="设计要求"></a>设计要求</h2>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>公司启动主站重构。</p>
+<p>主站是一个有着7年历史之久的大型单体应用，总代码量超过100万行。其中有一个模块是用于配置类目、地区、meta等信息的，叫牧野系统。由于业务复杂、hardcode极多，这个以可配置为荣的牧野系统，已经变得几乎完全不可用。而我所在的team，即负责牧野系统的重构。</p>
+<p>根据初步分析与设计，新的牧野系统分为三大子系统：</p>
+<ol>
+<li>字典服务，负责类目、地区、车型等库数据的管理</li>
+<li>schema服务，负责meta数据的管理</li>
+<li>牧野前台，供内部人员使用</li>
+</ol>
+<p>其中字典服务基本由我主导完成，尤其感谢某位测试同事的严谨把关，字典服务基本达到了功能完整可用、行为符合预期，尽管性能并非足够优秀，但也达到了上线标准。</p>
+<p>下面介绍一下公司内部字典服务的情况。牧野系统自18年12月份启动重构，一周内完成字典服务设计，字典服务在两周后完成设计文档的开发，并提交测试，测试周期耗时一周，基本完成功能测试，性能方面差距较大。此后一个月，字典服务一方面配合调用方、业务方等持续迭代功能打磨细节，一方面进行了第一轮性能优化——开发了批量查询接口。截至19年2月份，由于一些原因尚未放开流量，字典服务的平均QPS在300左右，最高600，没有达到设计预期的最高峰10000的QPS。</p>
+<p>由于公司内部语言体系是php+java的，字典服务也是基于spring（所用框架是内部自研的基于spring的spring-time）进行开发的。开发字典服务前，我本身的java开发经验只有不到三个月，在开发中我感觉字典服务有许多非常典型的case，可以说是入门java后端spring的教科书般的项目。由于我个人对Golang更感兴趣，因此也借此机会在尝试用go开发一个完全兼容Java版字典服务的golang版本的字典服务。</p>
+<p>以上即是本文背景。</p>
+<h2 id="设计要求"><a href="#设计要求" class="headerlink" title="设计要求"></a>设计要求</h2><ul>
+<li>接口层完全兼容原Java版的字典服务</li>
+</ul>
+<h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>由于要做接口层兼容，下面先介绍一些原java版的接口层长什么样。</p>
+<p>完整的<a href="https://github.com/Danceiny/baixing-helper/blob/master/docs/%E5%AD%97%E5%85%B8%E6%9C%8D%E5%8A%A1%E6%96%87%E6%A1%A3.md" target="_blank" rel="noopener">字典服务文档</a>。提炼几个关键点如下：</p>
+<ol>
+<li></li>
+</ol>
+
       
     </div>
 
@@ -630,6 +649,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Ext2Fsd.html" rel="prev" title="Ext2fsd软件对windows文件系统性能的坑比表现">
+                Ext2fsd软件对windows文件系统性能的坑比表现 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -827,7 +850,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计要求"><span class="nav-number">2.</span> <span class="nav-text">设计要求</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设计要求"><span class="nav-number">2.</span> <span class="nav-text">设计要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统设计"><span class="nav-number">3.</span> <span class="nav-text">系统设计</span></a></li></ol></div>
             
 
           </div>
