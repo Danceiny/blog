@@ -385,168 +385,6 @@
   
 
   <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/Ext2Fsd.html">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Danceiny">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="弹簧振子的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/Ext2Fsd.html" itemprop="url">Ext2fsd软件对windows文件系统性能的坑比表现</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-26T13:08:57+08:00">
-                2019-02-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/Ext2Fsd.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/Ext2Fsd.html" itemprop="commentCount">0</span> comments
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/Ext2Fsd.html" class="leancloud_visitors" data-flag-title="Ext2fsd软件对windows文件系统性能的坑比表现">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计</span>
-                
-                <span title="字数统计">
-                  0
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长</span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/字典服务设计与实现.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -631,7 +469,7 @@
                   <span class="post-meta-item-text">字数统计</span>
                 
                 <span title="字数统计">
-                  659
+                  890
                 </span>
               
 
@@ -647,7 +485,7 @@
                   <span class="post-meta-item-text">阅读时长</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -728,8 +566,234 @@
 <h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>由于要做接口层兼容，下面先介绍一些原java版的接口层长什么样。</p>
 <p>完整的<a href="https://github.com/Danceiny/baixing-helper/blob/master/docs/%E5%AD%97%E5%85%B8%E6%9C%8D%E5%8A%A1%E6%96%87%E6%A1%A3.md" target="_blank" rel="noopener">字典服务文档</a>。提炼几个关键点如下：</p>
 <ol>
-<li></li>
+<li>数据库采用mysql，主要字段有<ul>
+<li>bid，业务id，可能为int/string</li>
+<li>name，节点名称</li>
+<li>pid，父节点id</li>
+</ul>
+</li>
+<li>缓存主要有三个：<ul>
+<li>节点的对象缓存，也就是mysql的一行映射出来的一个对象。更加细分来说，对象缓存分两种（即有两份缓存），一种是完整的对象，一种是去除了部分属性的“裁剪精简版”对象。</li>
+<li>pids，节点的父系节点链条的id数组</li>
+<li>cids，节点的子节点的id数组</li>
+</ul>
+</li>
+<li>单个查询接口主要支持三个参数<ul>
+<li>bid，如前文所述</li>
+<li>parentDepth，向父级查询的深度</li>
+<li>childrenDepth，向子级查询的深度</li>
+</ul>
+</li>
+<li>批量查询接口主要支持以下参数<ul>
+<li>onlyId 是否将父子节点的bid加载成对象</li>
+<li>hasChildren 是否查询子节点</li>
+<li>parentDepth 如前文所述</li>
+<li>area 需要查询的area的bid数组，类似的还有category等</li>
+</ul>
+</li>
 </ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/大鱼海棠影评.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Danceiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="弹簧振子的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/大鱼海棠影评.html" itemprop="url">大鱼海棠影评</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-02T09:44:09+08:00">
+                2019-02-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/影评/" itemprop="url" rel="index">
+                    <span itemprop="name">影评</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/大鱼海棠影评.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/大鱼海棠影评.html" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/大鱼海棠影评.html" class="leancloud_visitors" data-flag-title="大鱼海棠影评">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  570
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="鱼塘末日——-《大鱼海棠》"><a href="#鱼塘末日——-《大鱼海棠》" class="headerlink" title="鱼塘末日—— 《大鱼海棠》"></a>鱼塘末日—— 《大鱼海棠》</h1><p>标签（空格分隔）：影评 </p>
+<hr>
+<p>“美术的皮囊是要为故事整体做嫁衣的。”<br>很可惜《大鱼海棠》没有。</p>
+<p>先说为什么选这部电影写影评。<br>我没有在12年前就听说过电影主创人员的梦想，我甚至在拿到电影票之前从未听说过这部电影。而电影票，也就是在一个无聊的下午，室友问我，手里有两张免费电影票，要不要一起去。<br>所以我一开始就不存在期望这东西。电影看得很开心。嗯，画面让我恍然想起宫崎骏，尤其是外景，还是颤抖的旁白音以及老奶奶，背景音乐也不错。电影放完还有那两位导演过来讲他们的故事。<br>导演说他是清华的工科生。哟，厉害厉害，我辈楷模。<br>导演说他做了十二年的梦。哟，厉害厉害，能睡这么久不简单呐。<br>故事呢？我记得导演说，打麻将那个场景，麻将的特写是要告诉女主三思而后行。<br>有趣。<br>过几天电影正式上映，网上一逛，骂声一片。<br>我想导演十二年的梦终于要醒了。<br>更加有趣了。</p>
+<p>跟风骂几句。</p>
+<ol>
+<li>男主脱光竟然木有小鸡鸡？凭什么导演你有不让人家有？</li>
+<li>女主真绿茶，人家为了您的幸福甘愿去死，没想到一直被当哥哥。</li>
+<li>男主你说你除了故事一开始救了一条鱼，还干了啥？</li>
+<li>女主应该以类似“反人类罪”的罪行被判罚吧？编剧的价值观呢？噢不对，编剧确定不是在划水？</li>
+<li>庄子北冥有鱼的鱼，怎么那么小？说好的几千里呢？</li>
+<li>那个老年旁白还能更无耻些吗？活了这么久怎么三观还是崩塌的？</li>
+<li>中国风就是引出题名的“大鱼”，以及“鱼”的住所福建土楼？两千年的儒家思想呢？</li>
+<li>三角恋玩得真不溜，比偶像剧差远了。</li>
+<li>扯犊子情怀，国漫崛起新希望这名字好玩？</li>
+<li>强行转3D，无耻圈钱。</li>
+</ol>
+<p>终于凑齐十大罪状。</p>
 
           
         
@@ -822,7 +886,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
