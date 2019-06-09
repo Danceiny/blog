@@ -1,0 +1,1590 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="google-site-verification" content="vMq_BhQFUAROsOvsvEcUwXVw7sXr5_V56azfa2HOztc">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css">
+
+
+  <meta name="keywords" content="Kafka,入门,教程">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="弹簧振子的博客" type="application/atom+xml">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1">
+
+
+
+
+  <meta property="fb:admins" content="danceiny">
+  <meta property="fb:app_id" content="366707543723815">
+
+
+
+<meta name="description" content="前言未完待续。此文将持续更新。  v0.1 [初稿：可运行的代码] 2017-08-25 18:50:08  Quick Start CET4没过轻松读：Apache 官方最新文档  For Pythoner直接看Consumer类源码。123456789101112131415161718192021222324252627282930313233343536373839404142434445">
+<meta name="keywords" content="Kafka,入门,教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一天：Kafka入门与项目实战">
+<meta property="og:url" content="http://blog.cannot.cc/一天：Kafka入门与项目实战.html">
+<meta property="og:site_name" content="弹簧振子的博客">
+<meta property="og:description" content="前言未完待续。此文将持续更新。  v0.1 [初稿：可运行的代码] 2017-08-25 18:50:08  Quick Start CET4没过轻松读：Apache 官方最新文档  For Pythoner直接看Consumer类源码。123456789101112131415161718192021222324252627282930313233343536373839404142434445">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-26T05:08:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="一天：Kafka入门与项目实战">
+<meta name="twitter:description" content="前言未完待续。此文将持续更新。  v0.1 [初稿：可运行的代码] 2017-08-25 18:50:08  Quick Start CET4没过轻松读：Apache 官方最新文档  For Pythoner直接看Consumer类源码。123456789101112131415161718192021222324252627282930313233343536373839404142434445">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":10,"offset_float":0,"b2t":true,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.cannot.cc/一天：Kafka入门与项目实战.html">
+
+
+
+
+
+  <title>一天：Kafka入门与项目实战 | 弹簧振子的博客</title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '366707543723815',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/zh_Hans/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-98611430-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f5f17d67ca77cbb4017f4ff9dd7e3819";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=62043044";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta custom-logo">
+    
+      <div class="site-meta-headline">
+        <a>
+          <img class="custom-logo-image" src="http://opkk27k9n.bkt.clouddn.com/head.jpg" alt="弹簧振子的博客">
+        </a>
+      </div>
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">弹簧振子的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">Spring Oscillator</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            站点地图
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope="" itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://blog.cannot.cc/一天：Kafka入门与项目实战.html">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Danceiny">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://opkk27k9n.bkt.clouddn.com/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="弹簧振子的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">一天：Kafka入门与项目实战</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T18:49:30+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/快速入门快速实践/" itemprop="url" rel="index">
+                    <span itemprop="name">快速入门快速实践</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/快速入门快速实践/一天/" itemprop="url" rel="index">
+                    <span itemprop="name">一天</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/一天：Kafka入门与项目实战.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count fb-comments-count" data-href="http://blog.cannot.cc/一天：Kafka入门与项目实战.html" itemprop="commentCount">0</span> comments
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/一天：Kafka入门与项目实战.html" class="leancloud_visitors" data-flag-title="一天：Kafka入门与项目实战">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  2,668
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  16
+                </span>
+              
+            </div>
+          
+
+          
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>未完待续。此文将持续更新。</p>
+<ul>
+<li>v0.1 [初稿：可运行的代码] 2017-08-25 18:50:08</li>
+</ul>
+<h1 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h1><ul>
+<li><a href="https://kafka.apache.org/quickstart" target="_blank" rel="noopener">CET4没过轻松读：Apache 官方最新文档</a></li>
+</ul>
+<h1 id="For-Pythoner"><a href="#For-Pythoner" class="headerlink" title="For Pythoner"></a>For Pythoner</h1><p>直接看Consumer类源码。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br></pre></td><td class="code"><pre><span class="line">class KafkaConsumer(six.Iterator):</span><br><span class="line">    """Consume records from a Kafka cluster.</span><br><span class="line"></span><br><span class="line">    The consumer will transparently handle the failure of servers in the Kafka</span><br><span class="line">    cluster, and adapt as topic-partitions are created or migrate between</span><br><span class="line">    brokers. It also interacts with the assigned kafka Group Coordinator node</span><br><span class="line">    to allow multiple consumers to <span class="keyword">load</span> balance consumption <span class="keyword">of</span> topics (requires</span><br><span class="line">    kafka &gt;= <span class="number">0.9</span><span class="number">.0</span><span class="number">.0</span>).</span><br><span class="line"></span><br><span class="line">    The consumer <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">thread</span> <span class="keyword">safe</span> <span class="keyword">and</span> should <span class="keyword">not</span> be <span class="keyword">shared</span> across threads.</span><br><span class="line"></span><br><span class="line">    Arguments:</span><br><span class="line">        *topics (<span class="keyword">str</span>): optional <span class="keyword">list</span> <span class="keyword">of</span> topics <span class="keyword">to</span> subscribe to. <span class="keyword">If</span> <span class="keyword">not</span> <span class="keyword">set</span>,</span><br><span class="line">            <span class="keyword">call</span> :meth:<span class="string">`~kafka.KafkaConsumer.subscribe`</span> <span class="keyword">or</span></span><br><span class="line">            :meth:<span class="string">`~kafka.KafkaConsumer.assign`</span> <span class="keyword">before</span> consuming records.</span><br><span class="line"></span><br><span class="line">    Keyword Arguments:</span><br><span class="line">        bootstrap_servers: <span class="string">'host[:port]'</span> <span class="keyword">string</span> (<span class="keyword">or</span> <span class="keyword">list</span> <span class="keyword">of</span> <span class="string">'host[:port]'</span></span><br><span class="line">            strings) that the consumer should contact <span class="keyword">to</span> bootstrap <span class="keyword">initial</span></span><br><span class="line">            cluster metadata. This does <span class="keyword">not</span> have <span class="keyword">to</span> be the <span class="keyword">full</span> node list.</span><br><span class="line">            It just needs <span class="keyword">to</span> have <span class="keyword">at</span> <span class="keyword">least</span> one broker that will respond <span class="keyword">to</span> a</span><br><span class="line">            Metadata API Request. <span class="keyword">Default</span> port <span class="keyword">is</span> <span class="number">9092.</span> <span class="keyword">If</span> <span class="keyword">no</span> servers <span class="keyword">are</span></span><br><span class="line">            specified, will <span class="keyword">default</span> <span class="keyword">to</span> localhost:<span class="number">9092.</span></span><br><span class="line">        client_id (<span class="keyword">str</span>): A <span class="keyword">name</span> <span class="keyword">for</span> this client. This <span class="keyword">string</span> <span class="keyword">is</span> passed <span class="keyword">in</span></span><br><span class="line">            <span class="keyword">each</span> request <span class="keyword">to</span> servers <span class="keyword">and</span> can be used <span class="keyword">to</span> identify specific</span><br><span class="line">            <span class="keyword">server</span>-side <span class="keyword">log</span> entries that correspond <span class="keyword">to</span> this client. Also</span><br><span class="line">            submitted <span class="keyword">to</span> GroupCoordinator <span class="keyword">for</span> <span class="keyword">logging</span> <span class="keyword">with</span> <span class="keyword">respect</span> <span class="keyword">to</span></span><br><span class="line">            consumer <span class="keyword">group</span> administration. <span class="keyword">Default</span>: <span class="string">'kafka-python-&#123;version&#125;'</span></span><br><span class="line">        <span class="keyword">group_id</span> (<span class="keyword">str</span> <span class="keyword">or</span> <span class="keyword">None</span>): The <span class="keyword">name</span> <span class="keyword">of</span> the consumer <span class="keyword">group</span> <span class="keyword">to</span> <span class="keyword">join</span> <span class="keyword">for</span> dynamic</span><br><span class="line">            <span class="keyword">partition</span> assignment (<span class="keyword">if</span> enabled), <span class="keyword">and</span> <span class="keyword">to</span> <span class="keyword">use</span> <span class="keyword">for</span> fetching <span class="keyword">and</span></span><br><span class="line">            committing offsets. <span class="keyword">If</span> <span class="keyword">None</span>, <span class="keyword">auto</span>-<span class="keyword">partition</span> assignment (via</span><br><span class="line">            <span class="keyword">group</span> coordinator) <span class="keyword">and</span> <span class="keyword">offset</span> commits <span class="keyword">are</span> disabled.</span><br><span class="line">            <span class="keyword">Default</span>: <span class="keyword">None</span></span><br><span class="line">        key_deserializer (callable): <span class="keyword">Any</span> callable that takes a</span><br><span class="line">            <span class="keyword">raw</span> message <span class="keyword">key</span> <span class="keyword">and</span> <span class="keyword">returns</span> a deserialized key.</span><br><span class="line">        value_deserializer (callable): <span class="keyword">Any</span> callable that takes a</span><br><span class="line">            <span class="keyword">raw</span> message <span class="keyword">value</span> <span class="keyword">and</span> <span class="keyword">returns</span> a deserialized value.</span><br><span class="line">        fetch_min_bytes (<span class="built_in">int</span>): <span class="keyword">Minimum</span> amount <span class="keyword">of</span> <span class="keyword">data</span> the <span class="keyword">server</span> should</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">for</span> a <span class="keyword">fetch</span> request, otherwise <span class="keyword">wait</span> up <span class="keyword">to</span></span><br><span class="line">            fetch_max_wait_ms <span class="keyword">for</span> more <span class="keyword">data</span> <span class="keyword">to</span> accumulate. <span class="keyword">Default</span>: <span class="number">1.</span></span><br><span class="line">        fetch_max_wait_ms (<span class="built_in">int</span>): The maximum amount <span class="keyword">of</span> <span class="keyword">time</span> <span class="keyword">in</span> milliseconds</span><br><span class="line">            the <span class="keyword">server</span> will <span class="keyword">block</span> <span class="keyword">before</span> answering the <span class="keyword">fetch</span> request <span class="keyword">if</span></span><br><span class="line">            there isn<span class="string">'t sufficient data to immediately satisfy the</span></span><br><span class="line"><span class="string">            requirement given by fetch_min_bytes. Default: 500.</span></span><br><span class="line"><span class="string">        fetch_max_bytes (int): The maximum amount of data the server should</span></span><br><span class="line"><span class="string">            return for a fetch request. This is not an absolute maximum, if the</span></span><br><span class="line"><span class="string">            first message in the first non-empty partition of the fetch is</span></span><br><span class="line"><span class="string">            larger than this value, the message will still be returned to</span></span><br><span class="line"><span class="string">            ensure that the consumer can make progress. NOTE: consumer performs</span></span><br><span class="line"><span class="string">            fetches to multiple brokers in parallel so memory usage will depend</span></span><br><span class="line"><span class="string">            on the number of brokers containing partitions for the topic.</span></span><br><span class="line"><span class="string">            Supported Kafka version &gt;= 0.10.1.0. Default: 52428800 (50 Mb).</span></span><br><span class="line"><span class="string">        max_partition_fetch_bytes (int): The maximum amount of data</span></span><br><span class="line"><span class="string">            per-partition the server will return. The maximum total memory</span></span><br><span class="line"><span class="string">            used for a request = #partitions * max_partition_fetch_bytes.</span></span><br><span class="line"><span class="string">            This size must be at least as large as the maximum message size</span></span><br><span class="line"><span class="string">            the server allows or else it is possible for the producer to</span></span><br><span class="line"><span class="string">            send messages larger than the consumer can fetch. If that</span></span><br><span class="line"><span class="string">            happens, the consumer can get stuck trying to fetch a large</span></span><br><span class="line"><span class="string">            message on a certain partition. Default: 1048576.</span></span><br><span class="line"><span class="string">        request_timeout_ms (int): Client request timeout in milliseconds.</span></span><br><span class="line"><span class="string">            Default: 40000.</span></span><br><span class="line"><span class="string">        retry_backoff_ms (int): Milliseconds to backoff when retrying on</span></span><br><span class="line"><span class="string">            errors. Default: 100.</span></span><br><span class="line"><span class="string">        reconnect_backoff_ms (int): The amount of time in milliseconds to</span></span><br><span class="line"><span class="string">            wait before attempting to reconnect to a given host.</span></span><br><span class="line"><span class="string">            Default: 50.</span></span><br><span class="line"><span class="string">        reconnect_backoff_max_ms (int): The maximum amount of time in</span></span><br><span class="line"><span class="string">            milliseconds to wait when reconnecting to a broker that has</span></span><br><span class="line"><span class="string">            repeatedly failed to connect. If provided, the backoff per host</span></span><br><span class="line"><span class="string">            will increase exponentially for each consecutive connection</span></span><br><span class="line"><span class="string">            failure, up to this maximum. To avoid connection storms, a</span></span><br><span class="line"><span class="string">            randomization factor of 0.2 will be applied to the backoff</span></span><br><span class="line"><span class="string">            resulting in a random range between 20% below and 20% above</span></span><br><span class="line"><span class="string">            the computed value. Default: 1000.</span></span><br><span class="line"><span class="string">        max_in_flight_requests_per_connection (int): Requests are pipelined</span></span><br><span class="line"><span class="string">            to kafka brokers up to this number of maximum requests per</span></span><br><span class="line"><span class="string">            broker connection. Default: 5.</span></span><br><span class="line"><span class="string">        auto_offset_reset (str): A policy for resetting offsets on</span></span><br><span class="line"><span class="string">            OffsetOutOfRange errors: '</span>earliest<span class="string">' will move to the oldest</span></span><br><span class="line"><span class="string">            available message, '</span>latest<span class="string">' will move to the most recent. Any</span></span><br><span class="line"><span class="string">            other value will raise the exception. Default: '</span>latest<span class="string">'.</span></span><br><span class="line"><span class="string">        enable_auto_commit (bool): If True , the consumer'</span>s <span class="keyword">offset</span> will be</span><br><span class="line">            periodically committed <span class="keyword">in</span> the background. <span class="keyword">Default</span>: True.</span><br><span class="line">        auto_commit_interval_ms (<span class="built_in">int</span>): <span class="built_in">Number</span> <span class="keyword">of</span> milliseconds <span class="keyword">between</span> <span class="keyword">automatic</span></span><br><span class="line">            <span class="keyword">offset</span> commits, <span class="keyword">if</span> enable_auto_commit <span class="keyword">is</span> True. <span class="keyword">Default</span>: <span class="number">5000.</span></span><br><span class="line">        default_offset_commit_callback (callable): Called <span class="keyword">as</span></span><br><span class="line">            callback(offsets, response) response will be either an <span class="keyword">Exception</span></span><br><span class="line">            <span class="keyword">or</span> an OffsetCommitResponse struct. This callback can be used <span class="keyword">to</span></span><br><span class="line">            <span class="keyword">trigger</span> custom actions <span class="keyword">when</span> a <span class="keyword">commit</span> request completes.</span><br><span class="line">        check_crcs (bool): Automatically <span class="keyword">check</span> the <span class="keyword">CRC32</span> <span class="keyword">of</span> the <span class="keyword">records</span></span><br><span class="line">            consumed. This ensures <span class="keyword">no</span> <span class="keyword">on</span>-the-wire <span class="keyword">or</span> <span class="keyword">on</span>-disk <span class="keyword">corruption</span> <span class="keyword">to</span></span><br><span class="line">            the messages occurred. This <span class="keyword">check</span> adds <span class="keyword">some</span> overhead, so it may</span><br><span class="line">            be disabled <span class="keyword">in</span> cases seeking extreme performance. <span class="keyword">Default</span>: <span class="literal">True</span></span><br><span class="line">        metadata_max_age_ms (<span class="built_in">int</span>): The <span class="keyword">period</span> <span class="keyword">of</span> <span class="keyword">time</span> <span class="keyword">in</span> milliseconds <span class="keyword">after</span></span><br><span class="line">            which we <span class="keyword">force</span> a <span class="keyword">refresh</span> <span class="keyword">of</span> metadata, even <span class="keyword">if</span> we haven<span class="string">'t seen any</span></span><br><span class="line"><span class="string">            partition leadership changes to proactively discover any new</span></span><br><span class="line"><span class="string">            brokers or partitions. Default: 300000</span></span><br><span class="line"><span class="string">        partition_assignment_strategy (list): List of objects to use to</span></span><br><span class="line"><span class="string">            distribute partition ownership amongst consumer instances when</span></span><br><span class="line"><span class="string">            group management is used.</span></span><br><span class="line"><span class="string">            Default: [RangePartitionAssignor, RoundRobinPartitionAssignor]</span></span><br><span class="line"><span class="string">        heartbeat_interval_ms (int): The expected time in milliseconds</span></span><br><span class="line"><span class="string">            between heartbeats to the consumer coordinator when using</span></span><br><span class="line"><span class="string">            Kafka'</span>s <span class="keyword">group</span> <span class="keyword">management</span> feature. Heartbeats <span class="keyword">are</span> used <span class="keyword">to</span> ensure</span><br><span class="line">            that the consumer<span class="string">'s session stays active and to facilitate</span></span><br><span class="line"><span class="string">            rebalancing when new consumers join or leave the group. The</span></span><br><span class="line"><span class="string">            value must be set lower than session_timeout_ms, but typically</span></span><br><span class="line"><span class="string">            should be set no higher than 1/3 of that value. It can be</span></span><br><span class="line"><span class="string">            adjusted even lower to control the expected time for normal</span></span><br><span class="line"><span class="string">            rebalances. Default: 3000</span></span><br><span class="line"><span class="string">        session_timeout_ms (int): The timeout used to detect failures when</span></span><br><span class="line"><span class="string">            using Kafka'</span>s <span class="keyword">group</span> <span class="keyword">management</span> facilities. <span class="keyword">Default</span>: <span class="number">30000</span></span><br><span class="line">        max_poll_records (<span class="built_in">int</span>): The maximum <span class="built_in">number</span> <span class="keyword">of</span> <span class="keyword">records</span> returned <span class="keyword">in</span> a</span><br><span class="line">            single <span class="keyword">call</span> <span class="keyword">to</span> :meth:<span class="string">`~kafka.KafkaConsumer.poll`</span>. <span class="keyword">Default</span>: <span class="number">500</span></span><br><span class="line">        receive_buffer_bytes (<span class="built_in">int</span>): The <span class="keyword">size</span> <span class="keyword">of</span> the TCP receive buffer</span><br><span class="line">            (SO_RCVBUF) <span class="keyword">to</span> <span class="keyword">use</span> <span class="keyword">when</span> reading data. <span class="keyword">Default</span>: <span class="keyword">None</span> (relies <span class="keyword">on</span></span><br><span class="line">            <span class="keyword">system</span> <span class="keyword">defaults</span>). The <span class="keyword">java</span> <span class="keyword">client</span> <span class="keyword">defaults</span> <span class="keyword">to</span> <span class="number">32768.</span></span><br><span class="line">        send_buffer_bytes (<span class="built_in">int</span>): The <span class="keyword">size</span> <span class="keyword">of</span> the TCP send buffer</span><br><span class="line">            (SO_SNDBUF) <span class="keyword">to</span> <span class="keyword">use</span> <span class="keyword">when</span> sending data. <span class="keyword">Default</span>: <span class="keyword">None</span> (relies <span class="keyword">on</span></span><br><span class="line">            <span class="keyword">system</span> <span class="keyword">defaults</span>). The <span class="keyword">java</span> <span class="keyword">client</span> <span class="keyword">defaults</span> <span class="keyword">to</span> <span class="number">131072.</span></span><br><span class="line">        socket_options (<span class="keyword">list</span>): <span class="keyword">List</span> <span class="keyword">of</span> tuple-arguments <span class="keyword">to</span> socket.setsockopt</span><br><span class="line">            <span class="keyword">to</span> <span class="keyword">apply</span> <span class="keyword">to</span> broker <span class="keyword">connection</span> sockets. <span class="keyword">Default</span>:</span><br><span class="line">            [(socket.IPPROTO_TCP, socket.TCP_NODELAY, <span class="number">1</span>)]</span><br><span class="line">        consumer_timeout_ms (<span class="built_in">int</span>): <span class="built_in">number</span> <span class="keyword">of</span> milliseconds <span class="keyword">to</span> <span class="keyword">block</span> during</span><br><span class="line">            message iteration <span class="keyword">before</span> raising StopIteration (i.e., ending the</span><br><span class="line">            iterator). <span class="keyword">Default</span> <span class="keyword">block</span> forever [<span class="built_in">float</span>(<span class="string">'inf'</span>)].</span><br><span class="line">        skip_double_compressed_messages (bool): A bug <span class="keyword">in</span> KafkaProducer &lt;= <span class="number">1.2</span><span class="number">.4</span></span><br><span class="line">            caused <span class="keyword">some</span> messages <span class="keyword">to</span> be corrupted via <span class="keyword">double</span>-compression.</span><br><span class="line">            <span class="keyword">By</span> <span class="keyword">default</span>, the fetcher will <span class="keyword">return</span> these messages <span class="keyword">as</span> a compressed</span><br><span class="line">            <span class="built_in">blob</span> <span class="keyword">of</span> <span class="keyword">bytes</span> <span class="keyword">with</span> a single <span class="keyword">offset</span>, i.e. how the message was</span><br><span class="line">            actually published <span class="keyword">to</span> the cluster. <span class="keyword">If</span> you prefer <span class="keyword">to</span> have the</span><br><span class="line">            fetcher automatically detect corrupt messages <span class="keyword">and</span> <span class="keyword">skip</span> them,</span><br><span class="line">            <span class="keyword">set</span> this <span class="keyword">option</span> <span class="keyword">to</span> True. <span class="keyword">Default</span>: False.</span><br><span class="line">        security_protocol (<span class="keyword">str</span>): Protocol used <span class="keyword">to</span> communicate <span class="keyword">with</span> brokers.</span><br><span class="line">            Valid <span class="keyword">values</span> <span class="keyword">are</span>: PLAINTEXT, SSL. <span class="keyword">Default</span>: PLAINTEXT.</span><br><span class="line">        ssl_context (ssl.SSLContext): Pre-configured SSLContext <span class="keyword">for</span> wrapping</span><br><span class="line">            socket connections. <span class="keyword">If</span> provided, all other ssl_* configurations</span><br><span class="line">            will be ignored. <span class="keyword">Default</span>: None.</span><br><span class="line">        ssl_check_hostname (bool): Flag <span class="keyword">to</span> configure whether ssl handshake</span><br><span class="line">            should <span class="keyword">verify</span> that the certificate matches the brokers hostname.</span><br><span class="line">            <span class="keyword">Default</span>: True.</span><br><span class="line">        ssl_cafile (<span class="keyword">str</span>): Optional filename <span class="keyword">of</span> ca <span class="keyword">file</span> <span class="keyword">to</span> <span class="keyword">use</span> <span class="keyword">in</span> certificate</span><br><span class="line">            verification. <span class="keyword">Default</span>: None.</span><br><span class="line">        ssl_certfile (<span class="keyword">str</span>): Optional filename <span class="keyword">of</span> <span class="keyword">file</span> <span class="keyword">in</span> pem <span class="keyword">format</span> containing</span><br><span class="line">            the <span class="keyword">client</span> certificate, <span class="keyword">as</span> well <span class="keyword">as</span> <span class="keyword">any</span> ca certificates needed <span class="keyword">to</span></span><br><span class="line">            establish the certificate<span class="string">'s authenticity. Default: None.</span></span><br><span class="line"><span class="string">        ssl_keyfile (str): Optional filename containing the client private key.</span></span><br><span class="line"><span class="string">            Default: None.</span></span><br><span class="line"><span class="string">        ssl_password (str): Optional password to be used when loading the</span></span><br><span class="line"><span class="string">            certificate chain. Default: None.</span></span><br><span class="line"><span class="string">        ssl_crlfile (str): Optional filename containing the CRL to check for</span></span><br><span class="line"><span class="string">            certificate expiration. By default, no CRL check is done. When</span></span><br><span class="line"><span class="string">            providing a file, only the leaf certificate will be checked against</span></span><br><span class="line"><span class="string">            this CRL. The CRL can only be checked with Python 3.4+ or 2.7.9+.</span></span><br><span class="line"><span class="string">            Default: None.</span></span><br><span class="line"><span class="string">        api_version (tuple): Specify which Kafka API version to use. If set to</span></span><br><span class="line"><span class="string">            None, the client will attempt to infer the broker version by probing</span></span><br><span class="line"><span class="string">            various APIs. Different versions enable different functionality.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            Examples:</span></span><br><span class="line"><span class="string">                (0, 9) enables full group coordination features with automatic</span></span><br><span class="line"><span class="string">                    partition assignment and rebalancing,</span></span><br><span class="line"><span class="string">                (0, 8, 2) enables kafka-storage offset commits with manual</span></span><br><span class="line"><span class="string">                    partition assignment only,</span></span><br><span class="line"><span class="string">                (0, 8, 1) enables zookeeper-storage offset commits with manual</span></span><br><span class="line"><span class="string">                    partition assignment only,</span></span><br><span class="line"><span class="string">                (0, 8, 0) enables basic functionality but requires manual</span></span><br><span class="line"><span class="string">                    partition assignment and offset management.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">            For the full list of supported versions, see</span></span><br><span class="line"><span class="string">            KafkaClient.API_VERSIONS. Default: None</span></span><br><span class="line"><span class="string">        api_version_auto_timeout_ms (int): number of milliseconds to throw a</span></span><br><span class="line"><span class="string">            timeout exception from the constructor when checking the broker</span></span><br><span class="line"><span class="string">            api version. Only applies if api_version set to '</span><span class="keyword">auto</span><span class="string">'</span></span><br><span class="line"><span class="string">        metric_reporters (list): A list of classes to use as metrics reporters.</span></span><br><span class="line"><span class="string">            Implementing the AbstractMetricsReporter interface allows plugging</span></span><br><span class="line"><span class="string">            in classes that will be notified of new metric creation. Default: []</span></span><br><span class="line"><span class="string">        metrics_num_samples (int): The number of samples maintained to compute</span></span><br><span class="line"><span class="string">            metrics. Default: 2</span></span><br><span class="line"><span class="string">        metrics_sample_window_ms (int): The maximum age in milliseconds of</span></span><br><span class="line"><span class="string">            samples used to compute metrics. Default: 30000</span></span><br><span class="line"><span class="string">        selector (selectors.BaseSelector): Provide a specific selector</span></span><br><span class="line"><span class="string">            implementation to use for I/O multiplexing.</span></span><br><span class="line"><span class="string">            Default: selectors.DefaultSelector</span></span><br><span class="line"><span class="string">        exclude_internal_topics (bool): Whether records from internal topics</span></span><br><span class="line"><span class="string">            (such as offsets) should be exposed to the consumer. If set to True</span></span><br><span class="line"><span class="string">            the only way to receive records from an internal topic is</span></span><br><span class="line"><span class="string">            subscribing to it. Requires 0.10+ Default: True</span></span><br><span class="line"><span class="string">        sasl_mechanism (str): String picking sasl mechanism when security_protocol</span></span><br><span class="line"><span class="string">            is SASL_PLAINTEXT or SASL_SSL. Currently only PLAIN is supported.</span></span><br><span class="line"><span class="string">            Default: None</span></span><br><span class="line"><span class="string">        sasl_plain_username (str): Username for sasl PLAIN authentication.</span></span><br><span class="line"><span class="string">            Default: None</span></span><br><span class="line"><span class="string">        sasl_plain_password (str): Password for sasl PLAIN authentication.</span></span><br><span class="line"><span class="string">            Default: None</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>def <strong>next</strong>(self)</li>
+<li><p>def _message_generator(self):</p>
+</li>
+<li><p>HTTP流式响应：<a href="https://gist.github.com/CMCDragonkai/6bfade6431e9ffb7fe88" target="_blank" rel="noopener">https://gist.github.com/CMCDragonkai/6bfade6431e9ffb7fe88</a></p>
+</li>
+<li><p><a href="https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html" target="_blank" rel="noopener">https://www.w3.org/Protocols/rfc1341/7_2_Multipart.html</a></p>
+</li>
+</ul>
+<ul>
+<li>Chrome抓包：chrome://net-internals/#requests</li>
+<li>Kafka入门：<a href="http://www.aboutyun.com/thread-12882-1-1.html" target="_blank" rel="noopener">http://www.aboutyun.com/thread-12882-1-1.html</a></li>
+</ul>
+<h1 id="我的业务需求"><a href="#我的业务需求" class="headerlink" title="我的业务需求"></a>我的业务需求</h1><p>已有实现是pip包客户端从flask服务器获取kafka服务器地址，在客户端直接消费。</p>
+<p>需要加上权限认证提升安全性，因此需要交由flask转发kafka日志。</p>
+<h1 id="服务端实现"><a href="#服务端实现" class="headerlink" title="服务端实现"></a>服务端实现</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">from</span> flask_restful <span class="keyword">import</span> Resource, reqparse</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Response, jsonify, g, stream_with_context</span><br><span class="line"><span class="keyword">from</span> App.common <span class="keyword">import</span> error_util <span class="keyword">as</span> ED</span><br><span class="line"><span class="keyword">from</span> App.views.user_views <span class="keyword">import</span> auth</span><br><span class="line"><span class="keyword">from</span> kafka <span class="keyword">import</span> KafkaConsumer</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">from</span> flask.ctx <span class="keyword">import</span> _request_ctx_stack</span><br><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> chain</span><br><span class="line"><span class="meta">@check_api_cost_time</span></span><br><span class="line"><span class="meta">@auth.login_required</span></span><br><span class="line"><span class="meta">@flask_app.route('/api/v1/logs', methods=['GET'], endpoint='task-logs')</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_logs_of_task</span><span class="params">()</span>:</span></span><br><span class="line">    parser = reqparse.RequestParser()</span><br><span class="line">    parser.add_argument(<span class="string">'method'</span>, type=str, location=<span class="string">'args'</span>)</span><br><span class="line">    parser.add_argument(<span class="string">'id'</span>, type=str, location=<span class="string">'args'</span>)</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    <span class="keyword">if</span> args.get(<span class="string">'method'</span>) <span class="keyword">and</span> args.get(<span class="string">'method'</span>).lower() == <span class="string">'kafka'</span>:</span><br><span class="line">        task_id = args.get(<span class="string">'id'</span>)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> task_id:</span><br><span class="line">            <span class="keyword">return</span> jsonify(ED.error_response_norm(ED.err_req_data))</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> is_owned_by_guser(get_experiment_by_id(task_id)):</span><br><span class="line">            <span class="keyword">return</span> jsonify(ED.error_response_norm(ED.err_user_permission))</span><br><span class="line"></span><br><span class="line">        res = Response(stream_with_context(chain(celery_log_generator(task_id),container_log_generator(task_id))),</span><br><span class="line">                       direct_passthrough=<span class="keyword">True</span>,</span><br><span class="line">                       mimetype=<span class="string">'multipart/x-mixed-replace'</span>)</span><br><span class="line">        <span class="comment"># res.headers['Transfer-Encoding'] = 'chunked'</span></span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">container_log_generator</span><span class="params">(task_id)</span>:</span></span><br><span class="line">    consumer = KafkaConsumer(task_id,</span><br><span class="line">                             bootstrap_servers=flask_app.config[<span class="string">'KAFKA_BROKER_URI'</span>],</span><br><span class="line">                             auto_offset_reset=<span class="string">'earliest'</span>,</span><br><span class="line">                             enable_auto_commit=<span class="keyword">False</span>,</span><br><span class="line">                             request_timeout_ms=<span class="number">40000</span>,</span><br><span class="line">                             consumer_timeout_ms=<span class="number">10000</span>)</span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="keyword">for</span> msg <span class="keyword">in</span> consumer:</span><br><span class="line">            str_line = json.loads(msg.value).get(<span class="string">"log"</span>).strip(<span class="string">"\n"</span>) + <span class="string">b'\r\n'</span></span><br><span class="line">            <span class="keyword">yield</span> bytes(str_line)</span><br><span class="line">    <span class="keyword">except</span> StopIteration <span class="keyword">as</span> e:</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">celery_log_generator</span><span class="params">(task_id)</span>:</span></span><br><span class="line">    path = flask_app.config[<span class="string">'UPLOAD_LOG_FOLDER'</span>] + task_id + <span class="string">"/worker.log"</span></span><br><span class="line">    <span class="keyword">with</span> open(path) <span class="keyword">as</span> f:</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> f:</span><br><span class="line">            <span class="keyword">yield</span> line</span><br></pre></td></tr></table></figure>
+<h1 id="客户端实现"><a href="#客户端实现" class="headerlink" title="客户端实现"></a>客户端实现</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">logs</span><span class="params">(id, tail, sleep_duration=<span class="number">1</span>)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Print the logs of the run.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment"># experiment = ExperimentClient().get(id)</span></span><br><span class="line">    <span class="comment"># task_instance = TaskInstanceClient().get(get_module_task_instance_id(experiment.task_instances))</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># log_server = ExperimentClient().get_log_server(id)</span></span><br><span class="line">    <span class="comment"># if not log_server:</span></span><br><span class="line">    <span class="comment">#     russell_logger.info("There is not a valid task id")</span></span><br><span class="line">    <span class="comment">#     return</span></span><br><span class="line">    <span class="keyword">import</span> logging</span><br><span class="line">    russell_logger.info(<span class="string">"loading log..."</span>)</span><br><span class="line">    logging.disable(sys.maxsize)</span><br><span class="line"></span><br><span class="line">    lines = ExperimentClient().get_log_stream(id)</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> lines:</span><br><span class="line">        print(<span class="string">"No logs...."</span>)</span><br><span class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">        print(line)</span><br><span class="line">    <span class="comment"># consumer = KafkaConsumer(id, bootstrap_servers=log_server,</span></span><br><span class="line">    <span class="comment">#                              auto_offset_reset='earliest', enable_auto_commit=False)</span></span><br><span class="line">    <span class="comment"># for msg in consumer:</span></span><br><span class="line">    <span class="comment">#     print(json.loads(msg.value).get("log").strip("\n"))</span></span><br><span class="line"></span><br><span class="line">    logging.disable(logging.NOTSET)</span><br><span class="line"></span><br><span class="line"><span class="string">'''ExperimentClinet(BaseHttpClient'''</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_log_stream</span><span class="params">(self, id, method=<span class="string">'kafka'</span>)</span>:</span></span><br><span class="line">        timeout = <span class="number">50</span></span><br><span class="line">        response = self.request(<span class="string">"GET"</span>,</span><br><span class="line">                                <span class="string">"/logs"</span>,</span><br><span class="line">                                params=&#123;<span class="string">'method'</span>:method, <span class="string">'id'</span>:id&#125;,</span><br><span class="line">                                stream=<span class="keyword">True</span>,</span><br><span class="line">                                timeout=timeout)</span><br><span class="line">        <span class="keyword">return</span> response.iter_lines()</span><br><span class="line"><span class="string">'''BaseHttpClient'''</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Base client for all HTTP operations</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">BaseHttpClient</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.base_url = <span class="string">"&#123;&#125;/api/v1"</span>.format(host)</span><br><span class="line">        self.access_token = AuthConfigManager.get_access_token()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">request</span><span class="params">(self,</span></span></span><br><span class="line"><span class="function"><span class="params">                method,</span></span></span><br><span class="line"><span class="function"><span class="params">                url,</span></span></span><br><span class="line"><span class="function"><span class="params">                params=None,</span></span></span><br><span class="line"><span class="function"><span class="params">                data=None,</span></span></span><br><span class="line"><span class="function"><span class="params">                files=None,</span></span></span><br><span class="line"><span class="function"><span class="params">                timeout=<span class="number">5</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                access_token=None,</span></span></span><br><span class="line"><span class="function"><span class="params">                stream=False)</span>:</span></span><br><span class="line">        <span class="string">"""</span></span><br><span class="line"><span class="string">        Execute the request using requests library</span></span><br><span class="line"><span class="string">        """</span></span><br><span class="line">        request_url = self.base_url + url</span><br><span class="line">        russell_logger.debug(<span class="string">"Starting request to url: &#123;&#125; with params: &#123;&#125;, data: &#123;&#125;"</span>.format(request_url, params, data))</span><br><span class="line">        <span class="keyword">if</span> access_token:</span><br><span class="line">            headers = &#123;<span class="string">"Authorization"</span>: <span class="string">"Basic &#123;&#125;"</span>.format(access_token)&#125;</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            headers = &#123;<span class="string">"Authorization"</span>: <span class="string">"Basic &#123;&#125;"</span>.format(</span><br><span class="line">                self.access_token.token <span class="keyword">if</span> self.access_token <span class="keyword">else</span> <span class="keyword">None</span>)</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="comment"># print "url: &#123;&#125;".format(request_url)</span></span><br><span class="line">            <span class="comment"># print "params: &#123;&#125;".format(params)</span></span><br><span class="line">            <span class="comment"># print "data: &#123;&#125;".format(data)</span></span><br><span class="line">            response = requests.request(method,</span><br><span class="line">                                        request_url,</span><br><span class="line">                                        params=params,</span><br><span class="line">                                        headers=headers,</span><br><span class="line">                                        data=data,</span><br><span class="line">                                        files=files,</span><br><span class="line">                                        timeout=timeout,</span><br><span class="line">                                        stream=stream)</span><br><span class="line">        <span class="keyword">except</span> requests.exceptions.ConnectionError:</span><br><span class="line">            sys.exit(<span class="string">"Cannot connect to the Russell server. Check your internet connection."</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> stream:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                russell_logger.debug(<span class="string">"Response Content: &#123;&#125;, Headers: &#123;&#125;"</span>.format(response.json(), response.headers))</span><br><span class="line">            <span class="keyword">except</span> Exception:</span><br><span class="line">                russell_logger.debug(<span class="string">"Request failed. Response: &#123;&#125;"</span>.format(response.content))</span><br><span class="line">            self.check_response_status(response)</span><br><span class="line">            print(<span class="string">"response: &#123;&#125;"</span>.format(json.dumps(response.json())))</span><br><span class="line">            <span class="keyword">return</span> response.json()[<span class="string">"data"</span>]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            russell_logger.info(<span class="string">'HTTP Stream Request/Response...'</span>)</span><br><span class="line">            <span class="keyword">return</span> response</span><br></pre></td></tr></table></figure>
+<p>不用flask的stream_with_context，则<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># @auth.login_required</span></span><br><span class="line"><span class="comment"># @flask_app.route('/api/v1/logs', methods=['GET'], endpoint='logs')</span></span><br><span class="line"><span class="comment"># def get_logs_of_task():</span></span><br><span class="line"><span class="comment">#     ctx = _request_ctx_stack.top.copy()</span></span><br><span class="line"><span class="comment">#     new_request = ctx.request</span></span><br><span class="line"><span class="comment">#     new_g = ctx.g</span></span><br><span class="line"><span class="comment">#     parser = reqparse.RequestParser()</span></span><br><span class="line"><span class="comment">#     parser.add_argument('method', type=str, location='args')</span></span><br><span class="line"><span class="comment">#     parser.add_argument('id', type=str, location='args')</span></span><br><span class="line"><span class="comment">#     args = parser.parse_args()</span></span><br><span class="line"><span class="comment">#     if args.get('method') and args.get('method').lower() == 'kafka':</span></span><br><span class="line"><span class="comment">#         log_server = flask_app.config['KAFKA_BROKER_URI']</span></span><br><span class="line"><span class="comment">#         task_id = args.get('id')</span></span><br><span class="line"><span class="comment">#         if not task_id:</span></span><br><span class="line"><span class="comment">#             return jsonify(ED.error_response_norm(ED.err_req_data))</span></span><br><span class="line"><span class="comment">#         if not getattr(getattr(new_g, 'user', None),'id', None) == getattr(get_experiment_by_id(task_id), 'owner_id', 0):</span></span><br><span class="line"><span class="comment">#             return jsonify(ED.error_response_norm(ED.err_user_permission))</span></span><br><span class="line">    <span class="string">''''''</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Danceiny wechat" style="width: 200px; max-width: 100%;">
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="http://opkk27k9n.bkt.clouddn.com/image/mm_facetoface_collect_qrcode_1494139725914.png" alt="Danceiny WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="http://opkk27k9n.bkt.clouddn.com/image/1494146045087.jpg" alt="Danceiny Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+            <a href="/tags/flask/" rel="tag"># flask</a>
+          
+            <a href="/tags/Kafka/" rel="tag"># Kafka</a>
+          
+        </div>
+      
+
+      
+        
+          <div class="social-like">
+            
+
+            
+              <div class="fb_like">
+                <div class="fb-like" data-layout="button_count" data-share="true"></div>
+              </div>
+            
+          </div>
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/RussellCloud碎碎念.html" rel="next" title="RussellCloud实习面经与入职经历">
+                <i class="fa fa-chevron-left"></i> RussellCloud实习面经与入职经历
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Git超简明指南与超常用命令.html" rel="prev" title="Git超简明指南与超常用命令">
+                Git超简明指南与超常用命令 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="fb-comments" data-href="http://blog.cannot.cc/一天：Kafka入门与项目实战.html" data-numposts="10" data-width="100%" data-colorscheme="light">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="http://opkk27k9n.bkt.clouddn.com/head.jpg" alt="Danceiny">
+          <p class="site-author-name" itemprop="name">Danceiny</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/danceiny" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/iven5" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/danceiny" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-zhihu"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/danceiny1" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Quick-Start"><span class="nav-number">2.</span> <span class="nav-text">Quick Start</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#For-Pythoner"><span class="nav-number">3.</span> <span class="nav-text">For Pythoner</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我的业务需求"><span class="nav-number">4.</span> <span class="nav-text">我的业务需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务端实现"><span class="nav-number">5.</span> <span class="nav-text">服务端实现</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端实现"><span class="nav-number">6.</span> <span class="nav-text">客户端实现</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Danceiny</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (search_path.endsWith("json")) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("bOXRyG4NSvI7F1UQQEP2p7OJ-gzGzoHsz", "fD7LdtBtuvfbrFJ4ku6KIisl");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.1"></script>
+
+
+  
+
+
+  
+  <!-- custom analytics part create by xiamo -->
+<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("bOXRyG4NSvI7F1UQQEP2p7OJ-gzGzoHsz", "fD7LdtBtuvfbrFJ4ku6KIisl");</script>
+<script>
+function showTime(Counter) {
+	var query = new AV.Query(Counter);
+	$(".leancloud_visitors").each(function() {
+		var url = $(this).attr("id").trim();
+		query.equalTo("url", url);
+		query.find({
+			success: function(results) {
+				if (results.length == 0) {
+					var content = '0 ' + $(document.getElementById(url)).text();
+					$(document.getElementById(url)).text(content);
+					return;
+				}
+				for (var i = 0; i < results.length; i++) {
+					var object = results[i];
+					var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+					$(document.getElementById(url)).text(content);
+				}
+			},
+			error: function(object, error) {
+				console.log("Error: " + error.code + " " + error.message);
+			}
+		});
+
+	});
+}
+
+function addCount(Counter) {
+	var Counter = AV.Object.extend("Counter");
+	url = $(".leancloud_visitors").attr('id').trim();
+	title = $(".leancloud_visitors").attr('data-flag-title').trim();
+	var query = new AV.Query(Counter);
+	query.equalTo("url", url);
+	query.find({
+		success: function(results) {
+			if (results.length > 0) {
+				var counter = results[0];
+				counter.fetchWhenSave(true);
+				counter.increment("time");
+				counter.save(null, {
+					success: function(counter) {
+						var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(counter, error) {
+						console.log('Failed to save Visitor num, with error message: ' + error.message);
+					}
+				});
+			} else {
+				var newcounter = new Counter();
+				newcounter.set("title", title);
+				newcounter.set("url", url);
+				newcounter.set("time", 1);
+				newcounter.save(null, {
+					success: function(newcounter) {
+					    console.log("newcounter.get('time')="+newcounter.get('time'));
+						var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+						$(document.getElementById(url)).text(content);
+					},
+					error: function(newcounter, error) {
+						console.log('Failed to create');
+					}
+				});
+			}
+		},
+		error: function(error) {
+			console.log('Error:' + error.code + " " + error.message);
+		}
+	});
+}
+$(function() {
+	var Counter = AV.Object.extend("Counter");
+	if ($('.leancloud_visitors').length == 1) {
+		addCount(Counter);
+	} else if ($('.post-title-link').length > 1) {
+		showTime(Counter);
+	}
+}); 
+</script>
+  
+</body>
+</html>
